@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+Max Top 5 critical clocks will be reported. For rest user needs to refer to Detailed report
+*******************************************************************************************-->
+<report_table display_priority="2" name="Timing Summary">
+<report_link name="Detailed report">
+<data>C:\Mustafa\Courses&amp;Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\synthesis\MIV_RV32_C0\MIV_RV32_C0.srr</data>
+<title>START OF TIMING REPORT</title>
+</report_link>
+<row>
+<data tcl_name="clock_name">Clock Name</data>
+<data tcl_name="req_freq">Req Freq</data>
+<data tcl_name="est_freq">Est Freq</data>
+<data tcl_name="slack">Slack</data>
+</row>
+<row>
+<data>COREJTAGDEBUG_Z3|N_2_inferred_clock</data>
+<data>100.0 MHz</data>
+<data>149.8 MHz</data>
+<data>1.662</data>
+</row>
+<row>
+<data>PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0/OUT0</data>
+<data>80.0 MHz</data>
+<data>50.6 MHz</data>
+<data>-7.258</data>
+</row>
+<row>
+<data>REF_CLK_0</data>
+<data>50.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>TCK</data>
+<data>6.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>System</data>
+<data>100.0 MHz</data>
+<data>27.1 MHz</data>
+<data>-26.878</data>
+</row>
+</report_table>

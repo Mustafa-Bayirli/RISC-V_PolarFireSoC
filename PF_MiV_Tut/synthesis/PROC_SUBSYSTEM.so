@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>PROC_SUBSYSTEM</design>
+	<target_verilog>C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\synthesis\PROC_SUBSYSTEM.vm</target_verilog>
+</SynplifyOutput>

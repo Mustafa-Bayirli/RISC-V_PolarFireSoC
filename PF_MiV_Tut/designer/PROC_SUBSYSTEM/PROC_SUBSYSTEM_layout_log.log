@@ -1,0 +1,106 @@
+INFO: Reading User SDC file C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\constraint\PROC_SUBSYSTEM_derived_constraints.sdc.
+INFO: Reading User SDC file C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\constraint\jtag_tck_constraint.sdc.
+INFO: The option "Abort flow if errors are found in SDC" is turned ON in Project Settings> Design flow page. The Place & Route tool will fail if errors are found in associated SDC files. Please uncheck the option to ignore the errors and continue running the tool.
+
+No errors or warnings found.
+INFO: The option "Abort flow if errors are found in PDC" is turned ON in Project Settings> Design flow page. The Place & Route tool will fail if errors are found in associated PDC files. Please uncheck the option to ignore the errors and continue running the tool
+TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
+***** Place and Route Configurations *****
+Timing-driven            : ON
+Power-driven             : OFF
+I/O Register Combining   : OFF
+Global Pins Demotion     : ON
+Driver Replication       : OFF
+High-effort              : ON
+Repair min-delay         : ON
+Incremental              : OFF
+Inter-clock optimization : ON
+
+INFO: Reading User PDC file C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\constraint\io\io.pdc. 0 error(s) and 0 warning(s)
+
+ Running Timing based Global Demotion. 
+        Demoted 0 global pins.
+
+ Timing based Global Demotion completed successfully. 
+
+Running the I/O Bank and Globals Assigner.
+Info:  I/O Bank and Globals Assigner identified 8 fixed I/O macros, 0 unfixed I/O macros
+
+I/O Bank and Globals Assigner completed successfully.
+Total time spent in I/O Bank and Globals Assigner: 2 seconds
+TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
+
+Placer V5.0 - 2025.1.0 
+Design: PROC_SUBSYSTEM                  Started: Sat Sep  6 16:32:03 2025
+
+Initializing High-Effort Timing-Driven Placement ...
+Clustering ...
+Placing ...
+Improving placement ...
+End of placement.
+
+Placer Runtime Summary   :
+Clustering (1 pass)      : 11 seconds
+Placement                : 11 seconds
+Improvement              : 264 seconds
+
+Placer completed successfully.
+
+Design: PROC_SUBSYSTEM                  
+Finished: Sat Sep  6 16:37:26 2025
+Total CPU Time:     00:05:31            Total Elapsed Time: 00:05:23
+Total Memory Usage: 1052.9 Mbytes
+                        o - o - o - o - o - o
+
+
+Warning:  The following clocks are routed using regular routing resources instead of dedicated global resources. Clocks using regular routing are more susceptible to noise than those using dedicated global resources. Microchip recommends promoting these signals to dedicated global resources.
+    Driver: COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk3.genblk1.TGT_TCK_GLB_RNIKVH:Y
+       Net: COREJTAGDEBUG_C0_0_TGT_TCK_0
+Clock pins: 98
+TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
+TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
+
+Router 
+Design: C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEMStarted: Sat Sep  6 16:37:34 2025
+
+
+Router completed successfully.
+
+Design: C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEM
+Finished: Sat Sep  6 16:38:05 2025
+Total CPU Time:     00:00:37            Total Elapsed Time: 00:00:31
+Total Memory Usage: 1770.3 Mbytes
+                        o - o - o - o - o - o
+
+Info: Iteration 1:
+  Worst minimum delay slack: -0.522 ns
+  Total violating paths eligible for improvement: 181
+  Total violating paths improved: 181
+Info: Iteration 2:
+  Worst minimum delay slack: 
+  Total violating paths eligible for improvement: 0
+  Total violating paths improved: 0
+Resource Usage
++---------------------------+------+-------+------------+
+| Type                      | Used | Total | Percentage |
++---------------------------+------+-------+------------+
+| 4LUT                      | 9208 | 93516 | 9.85       |
+| DFF                       | 3613 | 93516 | 3.86       |
+| Logic Element             | 9335 | 93516 | 9.98       |
+| I/Os using I/O Registers  | 0    | 80    | 0.00       |
+| I/O Register Flip-Flops   | 0    | 240   | 0.00       |
+| -- Input  I/O Flip-Flops  | 0    | 80    | 0.00       |
+| -- Output I/O Flip-Flops  | 0    | 80    | 0.00       |
+| -- Enable I/O Flip-Flops  | 0    | 80    | 0.00       |
++---------------------------+------+-------+------------+
+
+I/O Placement
++--------+-------+------------+
+| Type   | Count | Percentage |
++--------+-------+------------+
+| Locked |  8    | 100.00%    |
+| Placed |  0    | 0.00%      |
++--------+-------+------------+
+
+TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
+Completed writing pin report files.

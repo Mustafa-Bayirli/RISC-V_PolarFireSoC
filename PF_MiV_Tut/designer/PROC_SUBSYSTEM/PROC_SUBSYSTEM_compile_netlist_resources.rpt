@@ -1,0 +1,177 @@
+Compile Report
+Microchip Technology Inc. - Microchip Libero Software Release 2025.1 (Version 2025.1.0.14)
+Date: Sat Sep  6 16:27:22 2025
+
+Device Selection
++------------------------+--------------+
+| Family                 | PolarFireSoC |
+| Device                 | MPFS095T     |
+| Package                | FCSG325      |
+| Speed Grade            | -1           |
+| Core Voltage           | 1.0V         |
+| Part Range             | EXT          |
+| Default I/O technology | LVCMOS 1.8V  |
++------------------------+--------------+
+
+Source Files
++---------+---------------------------------------------------------------------------------------------------------------------------------------------+
+| Topcell | PROC_SUBSYSTEM                                                                                                                              |
+| Format  | Verilog                                                                                                                                     |
+| Source  | C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\synthesis\PROC_SUBSYSTEM.vm |
++---------+---------------------------------------------------------------------------------------------------------------------------------------------+
+
+Options
++----------------------------------------------------+----+
+| Limit the number of high fanout nets to display to | 10 |
++----------------------------------------------------+----+
+
+Resource Usage
++-----------------------------+------+-------+------------+
+| Type                        | Used | Total | Percentage |
++-----------------------------+------+-------+------------+
+| 4LUT                        | 9194 | 93516 | 9.83       |
+| DFF                         | 3613 | 93516 | 3.86       |
+| User I/O                    | 8    | 80    | 10.00      |
+| -- Single-ended I/O         | 8    | 80    | 10.00      |
+| -- Differential I/O Pairs   | 0    | 40    | 0.00       |
+| -- I/Os using I/O Registers | 0    | 80    | 0.00       |
+| I/O Register Flip-Flops     | 0    | 240   | 0.00       |
+| -- Input  I/O Flip-Flops    | 0    | 80    | 0.00       |
+| -- Output I/O Flip-Flops    | 0    | 80    | 0.00       |
+| -- Enable I/O Flip-Flops    | 0    | 80    | 0.00       |
+| uSRAM                       | 7    | 876   | 0.80       |
+| LSRAM                       | 32   | 308   | 10.39      |
+| Math                        | 0    | 292   | 0.00       |
+| H-Chip Global               | 3    | 48    | 6.25       |
+| PLL                         | 1    | 8     | 12.50      |
+| DLL                         | 0    | 8     | 0.00       |
+| BANKEN                      | 1    | 5     | 20.00      |
+| UJTAG                       | 1    | 1     | 100.00     |
+| INIT                        | 1    | 1     | 100.00     |
+| Transceiver Lanes           | 0    | 2     | 0.00       |
+| Transceiver PCIe            | 0    | 2     | 0.00       |
+| ICB_CLKINT                  | 2    | 68    | 2.94       |
+| MSS                         | 0    | 1     | 0.00       |
++-----------------------------+------+-------+------------+
+
+Detailed Logic Resource Usage
++-----------------------+------+------+
+| Type                  | 4LUT | DFF  |
++-----------------------+------+------+
+| Fabric Logic          | 7958 | 2377 |
+| uSRAM Interface Logic | 84   | 84   |
+| LSRAM Interface Logic | 1152 | 1152 |
+| Math Interface Logic  | 0    | 0    |
+| Total Used            | 9194 | 3613 |
++-----------------------+------+------+
+
+Detailed Carry Chains Resource Usage
++--------+------+
+| Length | Used |
+| 6      | 1    |
+| 8      | 1    |
+| 10     | 1    |
+| 14     | 1    |
+| 17     | 4    |
+| 30     | 1    |
+| 31     | 2    |
+| 32     | 4    |
+| 33     | 5    |
+| 64     | 2    |
+| 65     | 1    |
+| Total  | 23   |
++--------+------+
+
+Detailed 4LUT Groups Resource Usage
++--------+------+
+| Length | Used |
+| 2      | 54   |
+| 5      | 1    |
+| 22     | 1    |
+| Total  | 56   |
++--------+------+
+
+I/O Function
++-------------------------------+--------------+-------------+-----------------+
+| Type                          | w/o register | w/ register | w/ DDR register |
++-------------------------------+--------------+-------------+-----------------+
+| Input I/O                     | 3            | 0           | 0               |
+| Output I/O                    | 5            | 0           | 0               |
+| Bidirectional I/O             | 0            | 0           | 0               |
+| Differential Input I/O Pairs  | 0            | 0           | 0               |
+| Differential Output I/O Pairs | 0            | 0           | 0               |
++-------------------------------+--------------+-------------+-----------------+
+
+Nets assigned to chip global resources
++--------+---------+-----------------------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                              |
++--------+---------+-----------------------------------------------------------------------------------+
+| 2290   | INT_NET | Net   : PF_CCC_C0_0_OUT0_FABCLK_0                                                 |
+|        |         | Driver: PF_CCC_C0_0/PF_CCC_C0_0/clkint_0/U0_RGB1                                  |
+|        |         | Source: NETLIST                                                                   |
+| 107    | INT_NET | Net   : COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/TGT_TCK_GLB                         |
+|        |         | Driver: COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk3.genblk1.TGT_TCK_GLB/U0_RGB1 |
+|        |         | Source: NETLIST                                                                   |
+| 18     | INT_NET | Net   : COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/iUDRCK                              |
+|        |         | Driver: COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D/U0_RGB1  |
+|        |         | Source: NETLIST                                                                   |
++--------+---------+-----------------------------------------------------------------------------------+
+
+Nets assigned to row global resources
++--------+------+------+
+| Fanout | Type | Name |
++--------+------+------+
++--------+------+------+
+
+High fanout nets
++--------+---------+------------------------------------------------------------------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                                                                         |
++--------+---------+------------------------------------------------------------------------------------------------------------------------------+
+| 865    | INT_NET | Net   : CORERESET_PF_C0_0_CORERESET_PF_C0_0_dff                                                                              |
+|        |         | Driver: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15[0]                                                                        |
+| 339    | INT_NET | Net   : MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/subsys_resetn_Z                                                               |
+|        |         | Driver: MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/subsys_resetn                                                                 |
+| 235    | INT_NET | Net   : MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/cpu_debug_mode_net                                                            |
+|        |         | Driver: MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/u_hart_0/u_expipe_0/u_csr_privarch_0/gen_debug.debug_mode                     |
+| 166    | INT_NET | Net   : MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/u_hart_0/u_fetch_unit_0/buff_resp_rd_ptr[1]                                   |
+|        |         | Driver: MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/u_hart_0/u_fetch_unit_0/u_miv_rv32_ifu_iab_0/buff_resp_rd_ptr_Z[1]            |
+| 162    | INT_NET | Net   : MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/u_hart_0/u_expipe_0/de_ex_pipe_operand0_mux_sel_ex_Z[0]                       |
+|        |         | Driver: MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/u_hart_0/u_expipe_0/de_ex_pipe_operand0_mux_sel_ex[0]                         |
+| 144    | INT_NET | Net   : MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/u_hart_0/u_expipe_0/N_3733_i                                                  |
+|        |         | Driver: MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/u_hart_0/u_expipe_0/u_idecode_0/instr_accepted_ex_0                           |
+| 128    | INT_NET | Net   : MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_mtime.u_mtime_irq/un1_T_l_En                                              |
+|        |         | Driver: MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_mtime.u_mtime_irq/p_MTIME.un1_T_l_En                                      |
+| 124    | INT_NET | Net   : MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/miv_rv32_debug_du_0/N_84_i             |
+|        |         | Driver: MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/miv_rv32_debug_du_0/dmcontrol_dmactive |
+| 109    | INT_NET | Net   : COREJTAGDEBUG_C0_0_COREJTAGDEBUG_C0_0_genblk2_genblk2_0__BUFD_TRST_delay_sel[34]                                     |
+|        |         | Driver: COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk2.genblk2[0].BUFD_TRST/bufd_gen[33].BUFD_BLK                             |
+| 105    | INT_NET | Net   : MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/u_hart_0/u_expipe_0/u_exu_0/exu_alu_operand0_Z[31]                            |
+|        |         | Driver: MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/u_hart_0/u_expipe_0/u_exu_0/exu_alu_operand0[31]                              |
++--------+---------+------------------------------------------------------------------------------------------------------------------------------+
+
+High fanout nets (through buffer trees)
++--------+---------+------------------------------------------------------------------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                                                                         |
++--------+---------+------------------------------------------------------------------------------------------------------------------------------+
+| 865    | INT_NET | Net   : CORERESET_PF_C0_0_CORERESET_PF_C0_0_dff                                                                              |
+|        |         | Driver: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15[0]                                                                        |
+| 339    | INT_NET | Net   : MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/subsys_resetn_Z                                                               |
+|        |         | Driver: MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/subsys_resetn                                                                 |
+| 235    | INT_NET | Net   : MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/cpu_debug_mode_net                                                            |
+|        |         | Driver: MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/u_hart_0/u_expipe_0/u_csr_privarch_0/gen_debug.debug_mode                     |
+| 166    | INT_NET | Net   : MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/u_hart_0/u_fetch_unit_0/buff_resp_rd_ptr[1]                                   |
+|        |         | Driver: MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/u_hart_0/u_fetch_unit_0/u_miv_rv32_ifu_iab_0/buff_resp_rd_ptr_Z[1]            |
+| 162    | INT_NET | Net   : MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/u_hart_0/u_expipe_0/de_ex_pipe_operand0_mux_sel_ex_Z[0]                       |
+|        |         | Driver: MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/u_hart_0/u_expipe_0/de_ex_pipe_operand0_mux_sel_ex[0]                         |
+| 144    | INT_NET | Net   : MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/u_hart_0/u_expipe_0/N_3733_i                                                  |
+|        |         | Driver: MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/u_hart_0/u_expipe_0/u_idecode_0/instr_accepted_ex_0                           |
+| 128    | INT_NET | Net   : MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_mtime.u_mtime_irq/un1_T_l_En                                              |
+|        |         | Driver: MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_mtime.u_mtime_irq/p_MTIME.un1_T_l_En                                      |
+| 124    | INT_NET | Net   : MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/miv_rv32_debug_du_0/N_84_i             |
+|        |         | Driver: MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/miv_rv32_debug_du_0/dmcontrol_dmactive |
+| 109    | INT_NET | Net   : COREJTAGDEBUG_C0_0_COREJTAGDEBUG_C0_0_genblk2_genblk2_0__BUFD_TRST_delay_sel[34]                                     |
+|        |         | Driver: COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk2.genblk2[0].BUFD_TRST/bufd_gen[33].BUFD_BLK                             |
+| 105    | INT_NET | Net   : MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/u_hart_0/u_expipe_0/u_exu_0/exu_alu_operand0_Z[31]                            |
+|        |         | Driver: MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/u_hart_0/u_expipe_0/u_exu_0/exu_alu_operand0[31]                              |
++--------+---------+------------------------------------------------------------------------------------------------------------------------------+
+

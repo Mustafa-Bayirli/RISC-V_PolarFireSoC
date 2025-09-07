@@ -1,0 +1,15 @@
+Software Version: 2025.1.0.14
+Opened 'C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEM_fp\PROC_SUBSYSTEM.pro'
+PDB file 'C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEM.pdb' has been loaded successfully.
+DESIGN : PROC_SUBSYSTEM;  CHECKSUM : E01E;  PDB_VERSION : 1.9
+Info: Programming Interface selected is JTAG.
+Info: Design version: 0
+File/Folder 'C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEM.ppd' will be overwritten.
+Successfully exported PPD file for currently secured device: 'C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\designer\PROC_SUBSYSTEM\PROC_SUBSYSTEM.ppd'; file programs Fabric and sNVM.
+Fabric component bitstream digest: 4a6f3f829d258232f94021740e83fd71a2c16d6c7c186f111347e5df6826e0e2
+sNVM component bitstream digest: f8d2127bfd1e84a0f1400a240ca51550936b51c040f21a6f0adc2be0a655a437
+Entire bitstream digest: edc90d604700ff3d8b9f7a8cce4a2073f2477341d5c1ff85b69c11dc76d34963
+Finished: Sat Sep 06 17:03:31 2025 (Elapsed time 00:00:34)
+
+Project saved.
+Project closed.

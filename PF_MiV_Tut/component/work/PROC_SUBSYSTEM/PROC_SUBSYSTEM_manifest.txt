@@ -1,0 +1,11 @@
+Microchip Technology Inc. - Microchip Libero Software Release 2025.1 (Version 2025.1.0.14)
+
+Date      :  Sat Sep  6 15:47:38 2025
+Project   :  C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut
+Component :  PROC_SUBSYSTEM
+Family    :  PolarFireSoC
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Mustafa/Courses&Learning/Microchip_FPGA-SoC_Training/RISC-V_for_PolarFire/Discovery_Mi-V_tutorial/PF_MiV_Tut/component/work/PROC_SUBSYSTEM/PROC_SUBSYSTEM.v
+

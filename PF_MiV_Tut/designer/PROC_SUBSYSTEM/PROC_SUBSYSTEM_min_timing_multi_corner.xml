@@ -1,0 +1,3463 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml-stylesheet href="rptstyle.xsl" type="text/xsl" ?>
+<doc>
+<title>Timing Multi Corner Report Min Delay Analysis
+</title>
+<text>SmartTime Version 2025.1.0.14</text>
+<text>Microchip Technology Inc. - Microchip Libero Software Release 2025.1 (Version 2025.1.0.14)</text>
+<text>Date: Sat Sep  6 16:45:29 2025
+</text>
+<table>
+<header>
+</header>
+<row>
+ <cell>Design</cell>
+ <cell>PROC_SUBSYSTEM</cell>
+</row>
+<row>
+ <cell>Family</cell>
+ <cell>PolarFireSoC</cell>
+</row>
+<row>
+ <cell>Die</cell>
+ <cell>MPFS095T</cell>
+</row>
+<row>
+ <cell>Package</cell>
+ <cell>FCSG325</cell>
+</row>
+<row>
+ <cell>Temperature Range</cell>
+ <cell>0 - 100 C</cell>
+</row>
+<row>
+ <cell>Voltage Range</cell>
+ <cell>0.97 - 1.03 V</cell>
+</row>
+<row>
+ <cell>Speed Grade</cell>
+ <cell>-1</cell>
+</row>
+<row>
+ <cell>Design State</cell>
+ <cell>Post-Layout</cell>
+</row>
+<row>
+ <cell>Data source</cell>
+ <cell>Production</cell>
+</row>
+<row>
+ <cell>Multi Corner Report Operating Conditions</cell>
+ <cell>slow_lv_lt,fast_hv_lt,slow_lv_ht</cell>
+</row>
+</table>
+<text></text>
+<section>
+<name>Summary</name>
+<table>
+<header>
+ <cell>Clock Domain</cell>
+ <cell>Required Period (ns)</cell>
+ <cell>Required Frequency (MHz)</cell>
+ <cell>Worst Slack (ns)</cell>
+ <cell>Operating Conditions</cell>
+</header>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0/OUT0</cell>
+ <cell>12.500</cell>
+ <cell>80.000</cell>
+ <cell>0.072</cell>
+ <cell>fast_hv_lt</cell>
+</row>
+<row>
+ <cell>REF_CLK_0</cell>
+ <cell>20.000</cell>
+ <cell>50.000</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>TCK</cell>
+ <cell>166.670</cell>
+ <cell>6.000</cell>
+ <cell>0.028</cell>
+ <cell>slow_lv_lt</cell>
+</row>
+</table>
+<text></text>
+<table>
+<header>
+ <cell></cell>
+ <cell>Worst Slack (ns)</cell>
+ <cell>Operating Conditions</cell>
+</header>
+<row>
+ <cell>Input to Output</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+</table>
+</section>
+<section>
+<name>Clock Domain PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0/OUT0</name>
+<text></text>
+<section>
+<name>SET Register to Register</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Hold (ns)</cell>
+ <cell>Operating Conditions</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>CoreUARTapb_C0_0/CoreUARTapb_C0_0/uUART/tx_hold_reg[6]:CLK</cell>
+ <cell>CoreUARTapb_C0_0/CoreUARTapb_C0_0/uUART/make_TX/tx_byte[6]:D</cell>
+ <cell>0.149</cell>
+ <cell>0.072</cell>
+ <cell>2.105</cell>
+ <cell>2.033</cell>
+ <cell>0.071</cell>
+ <cell>fast_hv_lt</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_7[0]:CLK</cell>
+ <cell>CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_8[0]:D</cell>
+ <cell>0.151</cell>
+ <cell>0.078</cell>
+ <cell>2.114</cell>
+ <cell>2.036</cell>
+ <cell>0.068</cell>
+ <cell>fast_hv_lt</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>CoreUARTapb_C0_0/CoreUARTapb_C0_0/uUART/make_RX/samples[2]:CLK</cell>
+ <cell>CoreUARTapb_C0_0/CoreUARTapb_C0_0/uUART/make_RX/samples[1]:D</cell>
+ <cell>0.156</cell>
+ <cell>0.080</cell>
+ <cell>2.130</cell>
+ <cell>2.050</cell>
+ <cell>0.071</cell>
+ <cell>fast_hv_lt</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/miv_rv32_debug_du_0/cmderr_ff[1]:CLK</cell>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/miv_rv32_debug_du_0/abstractcs_cmderr[1]:D</cell>
+ <cell>0.157</cell>
+ <cell>0.084</cell>
+ <cell>2.106</cell>
+ <cell>2.022</cell>
+ <cell>0.068</cell>
+ <cell>fast_hv_lt</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_1[0]:CLK</cell>
+ <cell>CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_2[0]:D</cell>
+ <cell>0.158</cell>
+ <cell>0.084</cell>
+ <cell>2.108</cell>
+ <cell>2.024</cell>
+ <cell>0.068</cell>
+ <cell>fast_hv_lt</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: CoreUARTapb_C0_0/CoreUARTapb_C0_0/uUART/tx_hold_reg[6]:CLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: CoreUARTapb_C0_0/CoreUARTapb_C0_0/uUART/make_TX/tx_byte[6]:D</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2.105</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>2.033</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.072</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0/OUT0</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0:OUT0</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell>Clock generation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.680</cell>
+ <cell>0.680</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0_1:A</cell>
+ <cell>net</cell>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0_clkint_0</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.131</cell>
+ <cell>0.811</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0_1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:ICB_CLKINT</cell>
+ <cell>+</cell>
+ <cell>0.087</cell>
+ <cell>0.898</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0:A</cell>
+ <cell>net</cell>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0_NET</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.388</cell>
+ <cell>1.286</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.116</cell>
+ <cell>1.402</cell>
+ <cell>6</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0/U0_RGB1_RGB1:A</cell>
+ <cell>net</cell>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0/U0_Y</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.254</cell>
+ <cell>1.656</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0/U0_RGB1_RGB1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.038</cell>
+ <cell>1.694</cell>
+ <cell>470</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreUARTapb_C0_0/CoreUARTapb_C0_0/uUART/tx_hold_reg[6]:CLK</cell>
+ <cell>net</cell>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0/U0_RGB1_RGB1_rgb_net_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.262</cell>
+ <cell>1.956</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreUARTapb_C0_0/CoreUARTapb_C0_0/uUART/tx_hold_reg[6]:Q</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>+</cell>
+ <cell>0.076</cell>
+ <cell>2.032</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreUARTapb_C0_0/CoreUARTapb_C0_0/uUART/make_TX/tx_byte[6]:D</cell>
+ <cell>net</cell>
+ <cell>CoreUARTapb_C0_0/CoreUARTapb_C0_0/uUART/tx_hold_reg_Z[6]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.073</cell>
+ <cell>2.105</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2.105</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0/OUT0</cell>
+ <cell>Clock Constraint</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0:OUT0</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell>Clock generation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.756</cell>
+ <cell>0.756</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0_1:A</cell>
+ <cell>net</cell>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0_clkint_0</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.143</cell>
+ <cell>0.899</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0_1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:ICB_CLKINT</cell>
+ <cell>+</cell>
+ <cell>0.100</cell>
+ <cell>0.999</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0:A</cell>
+ <cell>net</cell>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0_NET</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.426</cell>
+ <cell>1.425</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.127</cell>
+ <cell>1.552</cell>
+ <cell>6</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0/U0_RGB1_RGB1:A</cell>
+ <cell>net</cell>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0/U0_Y</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.277</cell>
+ <cell>1.829</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0/U0_RGB1_RGB1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.042</cell>
+ <cell>1.871</cell>
+ <cell>470</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreUARTapb_C0_0/CoreUARTapb_C0_0/uUART/make_TX/tx_byte[6]:CLK</cell>
+ <cell>net</cell>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0/U0_RGB1_RGB1_rgb_net_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.295</cell>
+ <cell>2.166</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>clock reconvergence pessimism</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>-0.204</cell>
+ <cell>1.962</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>CoreUARTapb_C0_0/CoreUARTapb_C0_0/uUART/make_TX/tx_byte[6]:D</cell>
+ <cell>Library hold time</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>+</cell>
+ <cell>0.071</cell>
+ <cell>2.033</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2.033</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Operating Conditions</cell>
+ <cell>fast_hv_lt</cell>
+</row>
+</table>
+</section>
+<section>
+<name>SET External Hold</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Hold (ns)</cell>
+ <cell>External Hold (ns)</cell>
+ <cell>Operating Conditions</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>RX</cell>
+ <cell>CoreUARTapb_C0_0/CoreUARTapb_C0_0/uUART/make_RX/samples[2]:D</cell>
+ <cell>2.015</cell>
+ <cell></cell>
+ <cell>2.015</cell>
+ <cell></cell>
+ <cell>0.116</cell>
+ <cell>1.356</cell>
+ <cell>slow_lv_lt</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: RX</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: CoreUARTapb_C0_0/CoreUARTapb_C0_0/uUART/make_RX/samples[2]:D</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2.015</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>RX</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>RX_ibuf/U_IOPAD:PAD</cell>
+ <cell>net</cell>
+ <cell>RX</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>RX_ibuf/U_IOPAD:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:IOPAD_IN</cell>
+ <cell>+</cell>
+ <cell>0.449</cell>
+ <cell>0.449</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>RX_ibuf/U_IOIN:YIN</cell>
+ <cell>net</cell>
+ <cell>RX_ibuf/YIN</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.449</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>RX_ibuf/U_IOIN:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:IOIN_IB_E</cell>
+ <cell>+</cell>
+ <cell>0.262</cell>
+ <cell>0.711</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreUARTapb_C0_0/CoreUARTapb_C0_0/uUART/make_RX/samples[2]:D</cell>
+ <cell>net</cell>
+ <cell>RX_c</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>1.304</cell>
+ <cell>2.015</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2.015</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0/OUT0</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0:OUT0</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell>Clock generation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>1.282</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0_1:A</cell>
+ <cell>net</cell>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0_clkint_0</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.232</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0_1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:ICB_CLKINT</cell>
+ <cell>+</cell>
+ <cell>0.136</cell>
+ <cell>N/C</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0:A</cell>
+ <cell>net</cell>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0_NET</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.546</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.172</cell>
+ <cell>N/C</cell>
+ <cell>6</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0/U0_RGB1:A</cell>
+ <cell>net</cell>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0/U0_Y</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.388</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0/U0_RGB1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.060</cell>
+ <cell>N/C</cell>
+ <cell>46</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreUARTapb_C0_0/CoreUARTapb_C0_0/uUART/make_RX/samples[2]:CLK</cell>
+ <cell>net</cell>
+ <cell>PF_CCC_C0_0_OUT0_FABCLK_0</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.439</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreUARTapb_C0_0/CoreUARTapb_C0_0/uUART/make_RX/samples[2]:D</cell>
+ <cell>Library hold time</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>+</cell>
+ <cell>0.116</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Operating Conditions</cell>
+ <cell>slow_lv_lt</cell>
+</row>
+</table>
+</section>
+<section>
+<name>SET Clock to Output</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Clock to Out (ns)</cell>
+ <cell>Operating Conditions</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>CoreGPIO_C0_0/CoreGPIO_C0_0/xhdl1.GEN_BITS[3].APB_32.GPOUT_reg[3]:CLK</cell>
+ <cell>GPIO_OUT[3]</cell>
+ <cell>2.448</cell>
+ <cell></cell>
+ <cell>4.415</cell>
+ <cell></cell>
+ <cell>4.415</cell>
+ <cell>fast_hv_lt</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>CoreGPIO_C0_0/CoreGPIO_C0_0/xhdl1.GEN_BITS[2].APB_32.GPOUT_reg[2]:CLK</cell>
+ <cell>GPIO_OUT[2]</cell>
+ <cell>2.449</cell>
+ <cell></cell>
+ <cell>4.416</cell>
+ <cell></cell>
+ <cell>4.416</cell>
+ <cell>fast_hv_lt</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>CoreGPIO_C0_0/CoreGPIO_C0_0/xhdl1.GEN_BITS[0].APB_32.GPOUT_reg[0]:CLK</cell>
+ <cell>GPIO_OUT[0]</cell>
+ <cell>2.632</cell>
+ <cell></cell>
+ <cell>4.599</cell>
+ <cell></cell>
+ <cell>4.599</cell>
+ <cell>fast_hv_lt</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>CoreUARTapb_C0_0/CoreUARTapb_C0_0/uUART/make_TX/tx:CLK</cell>
+ <cell>TX</cell>
+ <cell>2.722</cell>
+ <cell></cell>
+ <cell>4.678</cell>
+ <cell></cell>
+ <cell>4.678</cell>
+ <cell>fast_hv_lt</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>CoreGPIO_C0_0/CoreGPIO_C0_0/xhdl1.GEN_BITS[1].APB_32.GPOUT_reg[1]:CLK</cell>
+ <cell>GPIO_OUT[1]</cell>
+ <cell>2.827</cell>
+ <cell></cell>
+ <cell>4.794</cell>
+ <cell></cell>
+ <cell>4.794</cell>
+ <cell>fast_hv_lt</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: CoreGPIO_C0_0/CoreGPIO_C0_0/xhdl1.GEN_BITS[3].APB_32.GPOUT_reg[3]:CLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: GPIO_OUT[3]</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>4.415</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0/OUT0</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0:OUT0</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell>Clock generation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.680</cell>
+ <cell>0.680</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0_1:A</cell>
+ <cell>net</cell>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0_clkint_0</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.131</cell>
+ <cell>0.811</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0_1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:ICB_CLKINT</cell>
+ <cell>+</cell>
+ <cell>0.087</cell>
+ <cell>0.898</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0:A</cell>
+ <cell>net</cell>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0_NET</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.388</cell>
+ <cell>1.286</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.116</cell>
+ <cell>1.402</cell>
+ <cell>6</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0/U0_RGB1_RGB1:A</cell>
+ <cell>net</cell>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0/U0_Y</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.254</cell>
+ <cell>1.656</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0/U0_RGB1_RGB1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.038</cell>
+ <cell>1.694</cell>
+ <cell>470</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreGPIO_C0_0/CoreGPIO_C0_0/xhdl1.GEN_BITS[3].APB_32.GPOUT_reg[3]:CLK</cell>
+ <cell>net</cell>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0/U0_RGB1_RGB1_rgb_net_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.273</cell>
+ <cell>1.967</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreGPIO_C0_0/CoreGPIO_C0_0/xhdl1.GEN_BITS[3].APB_32.GPOUT_reg[3]:Q</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>+</cell>
+ <cell>0.073</cell>
+ <cell>2.040</cell>
+ <cell>2</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>GPIO_OUT_obuf[3]/U_IOTRI:D</cell>
+ <cell>net</cell>
+ <cell>GPIO_OUT_c[3]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.701</cell>
+ <cell>2.741</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>GPIO_OUT_obuf[3]/U_IOTRI:DOUT</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:IOTRI_OB_EB</cell>
+ <cell>+</cell>
+ <cell>0.261</cell>
+ <cell>3.002</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>GPIO_OUT_obuf[3]/U_IOPAD:D</cell>
+ <cell>net</cell>
+ <cell>GPIO_OUT_obuf[3]/DOUT</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>3.002</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>GPIO_OUT_obuf[3]/U_IOPAD:PAD</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:IOPAD_TRI</cell>
+ <cell>+</cell>
+ <cell>1.413</cell>
+ <cell>4.415</cell>
+ <cell>0</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>GPIO_OUT[3]</cell>
+ <cell>net</cell>
+ <cell>GPIO_OUT[3]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>4.415</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>4.415</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0/OUT0</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>GPIO_OUT[3]</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Operating Conditions</cell>
+ <cell>fast_hv_lt</cell>
+</row>
+</table>
+</section>
+<section>
+<name>SET Register to Asynchronous</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Removal (ns)</cell>
+ <cell>Skew (ns)</cell>
+ <cell>Operating Conditions</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15[0]:CLK</cell>
+ <cell>PF_SRAM_AHBL_AXI_C0_0/COREAHBLSRAM_PF_0/genblk1.U_PF_SRAM_AHBL_AXI_C0_COREAHBLSRAM_PF_0_AHBLSram/HADDR_d[13]:ALn</cell>
+ <cell>0.271</cell>
+ <cell>0.279</cell>
+ <cell>2.213</cell>
+ <cell>1.934</cell>
+ <cell>-0.034</cell>
+ <cell>-0.026</cell>
+ <cell>fast_hv_lt</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15[0]:CLK</cell>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/u_hart_0/u_fetch_unit_0/u_miv_rv32_ifu_iab_0/resp_count_Z[1]:ALn</cell>
+ <cell>0.492</cell>
+ <cell>0.463</cell>
+ <cell>2.434</cell>
+ <cell>1.971</cell>
+ <cell>-0.032</cell>
+ <cell>-0.061</cell>
+ <cell>fast_hv_lt</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15[0]:CLK</cell>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/u_hart_0/u_fetch_unit_0/u_miv_rv32_ifu_iab_0/resp_count_Z[0]:ALn</cell>
+ <cell>0.492</cell>
+ <cell>0.463</cell>
+ <cell>2.434</cell>
+ <cell>1.971</cell>
+ <cell>-0.032</cell>
+ <cell>-0.061</cell>
+ <cell>fast_hv_lt</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15[0]:CLK</cell>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/u_hart_0/u_fetch_unit_0/u_miv_rv32_ifu_iab_0/buff_resp_rd_ptr_Z[1]:ALn</cell>
+ <cell>0.492</cell>
+ <cell>0.463</cell>
+ <cell>2.434</cell>
+ <cell>1.971</cell>
+ <cell>-0.032</cell>
+ <cell>-0.061</cell>
+ <cell>fast_hv_lt</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15[0]:CLK</cell>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/u_hart_0/u_fetch_unit_0/u_miv_rv32_ifu_iab_0/buff_resp_rd_ptr_Z[0]:ALn</cell>
+ <cell>0.492</cell>
+ <cell>0.463</cell>
+ <cell>2.434</cell>
+ <cell>1.971</cell>
+ <cell>-0.032</cell>
+ <cell>-0.061</cell>
+ <cell>fast_hv_lt</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15[0]:CLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: PF_SRAM_AHBL_AXI_C0_0/COREAHBLSRAM_PF_0/genblk1.U_PF_SRAM_AHBL_AXI_C0_COREAHBLSRAM_PF_0_AHBLSram/HADDR_d[13]:ALn</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2.213</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>1.934</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.279</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0/OUT0</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0:OUT0</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell>Clock generation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.680</cell>
+ <cell>0.680</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0_1:A</cell>
+ <cell>net</cell>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0_clkint_0</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.131</cell>
+ <cell>0.811</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0_1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:ICB_CLKINT</cell>
+ <cell>+</cell>
+ <cell>0.087</cell>
+ <cell>0.898</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0:A</cell>
+ <cell>net</cell>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0_NET</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.388</cell>
+ <cell>1.286</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.116</cell>
+ <cell>1.402</cell>
+ <cell>6</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0/U0_RGB1_RGB3:A</cell>
+ <cell>net</cell>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0/U0_Y</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.253</cell>
+ <cell>1.655</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0/U0_RGB1_RGB3:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.038</cell>
+ <cell>1.693</cell>
+ <cell>1118</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15[0]:CLK</cell>
+ <cell>net</cell>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0/U0_RGB1_RGB3_rgb_net_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.249</cell>
+ <cell>1.942</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15[0]:Q</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>+</cell>
+ <cell>0.072</cell>
+ <cell>2.014</cell>
+ <cell>865</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_SRAM_AHBL_AXI_C0_0/COREAHBLSRAM_PF_0/genblk1.U_PF_SRAM_AHBL_AXI_C0_COREAHBLSRAM_PF_0_AHBLSram/HADDR_d[13]:ALn</cell>
+ <cell>net</cell>
+ <cell>CORERESET_PF_C0_0_CORERESET_PF_C0_0_dff</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.199</cell>
+ <cell>2.213</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2.213</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0/OUT0</cell>
+ <cell>Clock Constraint</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0:OUT0</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell>Clock generation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.756</cell>
+ <cell>0.756</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0_1:A</cell>
+ <cell>net</cell>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0_clkint_0</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.143</cell>
+ <cell>0.899</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0_1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:ICB_CLKINT</cell>
+ <cell>+</cell>
+ <cell>0.100</cell>
+ <cell>0.999</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0:A</cell>
+ <cell>net</cell>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0_NET</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.426</cell>
+ <cell>1.425</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.127</cell>
+ <cell>1.552</cell>
+ <cell>6</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0/U0_RGB1_RGB3:A</cell>
+ <cell>net</cell>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0/U0_Y</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.276</cell>
+ <cell>1.828</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0/U0_RGB1_RGB3:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.042</cell>
+ <cell>1.870</cell>
+ <cell>1118</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>PF_SRAM_AHBL_AXI_C0_0/COREAHBLSRAM_PF_0/genblk1.U_PF_SRAM_AHBL_AXI_C0_COREAHBLSRAM_PF_0_AHBLSram/HADDR_d[13]:CLK</cell>
+ <cell>net</cell>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0/U0_RGB1_RGB3_rgb_net_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.290</cell>
+ <cell>2.160</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>clock reconvergence pessimism</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>-0.192</cell>
+ <cell>1.968</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PF_SRAM_AHBL_AXI_C0_0/COREAHBLSRAM_PF_0/genblk1.U_PF_SRAM_AHBL_AXI_C0_COREAHBLSRAM_PF_0_AHBLSram/HADDR_d[13]:ALn</cell>
+ <cell>Library removal time</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>+</cell>
+ <cell>-0.034</cell>
+ <cell>1.934</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>1.934</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Operating Conditions</cell>
+ <cell>fast_hv_lt</cell>
+</row>
+</table>
+</section>
+<section>
+<name>SET External Removal</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Removal (ns)</cell>
+ <cell>External Removal (ns)</cell>
+ <cell>Operating Conditions</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>RESETn</cell>
+ <cell>CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_5[0]:ALn</cell>
+ <cell>1.637</cell>
+ <cell></cell>
+ <cell>1.637</cell>
+ <cell></cell>
+ <cell>-0.058</cell>
+ <cell>1.528</cell>
+ <cell>slow_lv_lt</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>RESETn</cell>
+ <cell>CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_4[0]:ALn</cell>
+ <cell>1.816</cell>
+ <cell></cell>
+ <cell>1.816</cell>
+ <cell></cell>
+ <cell>-0.057</cell>
+ <cell>1.527</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>RESETn</cell>
+ <cell>CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_3[0]:ALn</cell>
+ <cell>1.637</cell>
+ <cell></cell>
+ <cell>1.637</cell>
+ <cell></cell>
+ <cell>-0.058</cell>
+ <cell>1.527</cell>
+ <cell>slow_lv_lt</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>RESETn</cell>
+ <cell>CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_2[0]:ALn</cell>
+ <cell>1.637</cell>
+ <cell></cell>
+ <cell>1.637</cell>
+ <cell></cell>
+ <cell>-0.058</cell>
+ <cell>1.527</cell>
+ <cell>slow_lv_lt</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>RESETn</cell>
+ <cell>CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_1[0]:ALn</cell>
+ <cell>1.637</cell>
+ <cell></cell>
+ <cell>1.637</cell>
+ <cell></cell>
+ <cell>-0.058</cell>
+ <cell>1.527</cell>
+ <cell>slow_lv_lt</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: RESETn</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_5[0]:ALn</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>1.637</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>RESETn</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>RESETn_ibuf/U_IOPAD:PAD</cell>
+ <cell>net</cell>
+ <cell>RESETn</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>RESETn_ibuf/U_IOPAD:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:IOPAD_IN</cell>
+ <cell>+</cell>
+ <cell>0.449</cell>
+ <cell>0.449</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>RESETn_ibuf/U_IOIN:YIN</cell>
+ <cell>net</cell>
+ <cell>RESETn_ibuf/YIN</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.449</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>RESETn_ibuf/U_IOIN:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:IOIN_IB_E</cell>
+ <cell>+</cell>
+ <cell>0.262</cell>
+ <cell>0.711</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CORERESET_PF_C0_0/CORERESET_PF_C0_0/un1_D:A</cell>
+ <cell>net</cell>
+ <cell>RESETn_c</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.528</cell>
+ <cell>1.239</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CORERESET_PF_C0_0/CORERESET_PF_C0_0/un1_D:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.118</cell>
+ <cell>1.357</cell>
+ <cell>16</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_5[0]:ALn</cell>
+ <cell>net</cell>
+ <cell>CORERESET_PF_C0_0/CORERESET_PF_C0_0/un1_INTERNAL_RST_i</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.280</cell>
+ <cell>1.637</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>1.637</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0/OUT0</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0:OUT0</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell>Clock generation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>1.282</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0_1:A</cell>
+ <cell>net</cell>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0_clkint_0</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.232</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0_1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:ICB_CLKINT</cell>
+ <cell>+</cell>
+ <cell>0.136</cell>
+ <cell>N/C</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0:A</cell>
+ <cell>net</cell>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0_NET</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.546</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.172</cell>
+ <cell>N/C</cell>
+ <cell>6</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0/U0_RGB1:A</cell>
+ <cell>net</cell>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0/U0_Y</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.388</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0/U0_RGB1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.060</cell>
+ <cell>N/C</cell>
+ <cell>46</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_5[0]:CLK</cell>
+ <cell>net</cell>
+ <cell>PF_CCC_C0_0_OUT0_FABCLK_0</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.407</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_5[0]:ALn</cell>
+ <cell>Library removal time</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>+</cell>
+ <cell>-0.058</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Operating Conditions</cell>
+ <cell>slow_lv_lt</cell>
+</row>
+</table>
+</section>
+<section>
+<name>SET Asynchronous to Register</name>
+<text>No Path</text>
+</section>
+<section>
+<name>SET TCK to PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0/OUT0</name>
+<text>No Path</text>
+</section>
+</section>
+<section>
+<name>Clock Domain REF_CLK_0</name>
+<text></text>
+<section>
+<name>SET Register to Register</name>
+<text>No Path</text>
+</section>
+<section>
+<name>SET External Hold</name>
+<text>No Path</text>
+</section>
+<section>
+<name>SET Clock to Output</name>
+<text>No Path</text>
+</section>
+<section>
+<name>SET Register to Asynchronous</name>
+<text>No Path</text>
+</section>
+<section>
+<name>SET External Removal</name>
+<text>No Path</text>
+</section>
+<section>
+<name>SET Asynchronous to Register</name>
+<text>No Path</text>
+</section>
+</section>
+<section>
+<name>Clock Domain TCK</name>
+<text></text>
+<section>
+<name>SET Register to Register</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Hold (ns)</cell>
+ <cell>Operating Conditions</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/MIV_subsys_debug_transport_module_jtag_0/ir_and_Instruction_register.gen_ir_and_Instruction_register_active_low.irReg[0]:CLK</cell>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[26]:D</cell>
+ <cell>0.838</cell>
+ <cell>0.028</cell>
+ <cell>7.671</cell>
+ <cell>7.643</cell>
+ <cell>0.140</cell>
+ <cell>slow_lv_lt</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/MIV_subsys_debug_transport_module_jtag_0/ir_and_Instruction_register.gen_ir_and_Instruction_register_active_low.irReg[0]:CLK</cell>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[29]:D</cell>
+ <cell>0.839</cell>
+ <cell>0.029</cell>
+ <cell>7.672</cell>
+ <cell>7.643</cell>
+ <cell>0.140</cell>
+ <cell>slow_lv_lt</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/wr_ptr[0]:CLK</cell>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[7]:EN</cell>
+ <cell>0.994</cell>
+ <cell>0.031</cell>
+ <cell>8.025</cell>
+ <cell>7.994</cell>
+ <cell>0.038</cell>
+ <cell>slow_lv_lt</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/wr_ptr[0]:CLK</cell>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[30]:EN</cell>
+ <cell>0.680</cell>
+ <cell>0.031</cell>
+ <cell>5.206</cell>
+ <cell>5.175</cell>
+ <cell>0.021</cell>
+ <cell>fast_hv_lt</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/wr_ptr[0]:CLK</cell>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[27]:EN</cell>
+ <cell>0.680</cell>
+ <cell>0.031</cell>
+ <cell>5.206</cell>
+ <cell>5.175</cell>
+ <cell>0.021</cell>
+ <cell>fast_hv_lt</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/MIV_subsys_debug_transport_module_jtag_0/ir_and_Instruction_register.gen_ir_and_Instruction_register_active_low.irReg[0]:CLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[26]:D</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>7.671</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>7.643</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.028</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>TCK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>TCK</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk1.genblk1.genblk1.UJTAG_inst:TCK</cell>
+ <cell>net</cell>
+ <cell>TCK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk1.genblk1.genblk1.UJTAG_inst:UDRCK</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:UJTAG_SEC</cell>
+ <cell>+</cell>
+ <cell>2.045</cell>
+ <cell>2.045</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D_1:A</cell>
+ <cell>net</cell>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.276</cell>
+ <cell>2.321</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D_1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:ICB_CLKINT</cell>
+ <cell>+</cell>
+ <cell>0.222</cell>
+ <cell>2.543</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D:A</cell>
+ <cell>net</cell>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D_NET</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.102</cell>
+ <cell>2.645</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.144</cell>
+ <cell>2.789</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D/U0_RGB1:A</cell>
+ <cell>net</cell>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D/U0_Y</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.342</cell>
+ <cell>3.131</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D/U0_RGB1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.054</cell>
+ <cell>3.185</cell>
+ <cell>18</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_0:A</cell>
+ <cell>net</cell>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/iUDRCK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.447</cell>
+ <cell>3.632</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_0:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.179</cell>
+ <cell>3.811</cell>
+ <cell>2</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk3.genblk1.TGT_TCK_GLB_RNIKVH:A</cell>
+ <cell>net</cell>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/un1_DUT_TCK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>2.397</cell>
+ <cell>6.208</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk3.genblk1.TGT_TCK_GLB_RNIKVH:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG1</cell>
+ <cell>+</cell>
+ <cell>0.038</cell>
+ <cell>6.246</cell>
+ <cell>98</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/MIV_subsys_debug_transport_module_jtag_0/ir_and_Instruction_register.gen_ir_and_Instruction_register_active_low.irReg[0]:CLK</cell>
+ <cell>net</cell>
+ <cell>COREJTAGDEBUG_C0_0_TGT_TCK_0</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.587</cell>
+ <cell>6.833</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/MIV_subsys_debug_transport_module_jtag_0/ir_and_Instruction_register.gen_ir_and_Instruction_register_active_low.irReg[0]:Q</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>+</cell>
+ <cell>0.128</cell>
+ <cell>6.961</cell>
+ <cell>4</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/MIV_subsys_debug_transport_module_jtag_0/gen_shift_register_active_high.gen_shift_register_active_low.shiftDR21_0_a2:B</cell>
+ <cell>net</cell>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/MIV_subsys_debug_transport_module_jtag_0/irReg[0]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.220</cell>
+ <cell>7.181</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/MIV_subsys_debug_transport_module_jtag_0/gen_shift_register_active_high.gen_shift_register_active_low.shiftDR21_0_a2:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG3</cell>
+ <cell>+</cell>
+ <cell>0.064</cell>
+ <cell>7.245</cell>
+ <cell>26</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/MIV_subsys_debug_transport_module_jtag_0/dtm_req_data[26]:A</cell>
+ <cell>net</cell>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/shiftDR21</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.344</cell>
+ <cell>7.589</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/MIV_subsys_debug_transport_module_jtag_0/dtm_req_data[26]:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG3</cell>
+ <cell>+</cell>
+ <cell>0.059</cell>
+ <cell>7.648</cell>
+ <cell>2</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[26]:D</cell>
+ <cell>net</cell>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/dtm_req_data[26]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.023</cell>
+ <cell>7.671</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>7.671</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>TCK</cell>
+ <cell>Clock Constraint</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>TCK</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk1.genblk1.genblk1.UJTAG_inst:TCK</cell>
+ <cell>net</cell>
+ <cell>TCK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk1.genblk1.genblk1.UJTAG_inst:UDRCK</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:UJTAG_SEC</cell>
+ <cell>+</cell>
+ <cell>2.655</cell>
+ <cell>2.655</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D_1:A</cell>
+ <cell>net</cell>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.304</cell>
+ <cell>2.959</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D_1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:ICB_CLKINT</cell>
+ <cell>+</cell>
+ <cell>0.256</cell>
+ <cell>3.215</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D:A</cell>
+ <cell>net</cell>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D_NET</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.112</cell>
+ <cell>3.327</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.158</cell>
+ <cell>3.485</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D/U0_RGB1:A</cell>
+ <cell>net</cell>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D/U0_Y</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.377</cell>
+ <cell>3.862</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D/U0_RGB1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.064</cell>
+ <cell>3.926</cell>
+ <cell>18</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_0:A</cell>
+ <cell>net</cell>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/iUDRCK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.509</cell>
+ <cell>4.435</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_0:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.232</cell>
+ <cell>4.667</cell>
+ <cell>2</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk3.genblk1.TGT_TCK_GLB_RNIKVH:A</cell>
+ <cell>net</cell>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/un1_DUT_TCK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>3.198</cell>
+ <cell>7.865</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk3.genblk1.TGT_TCK_GLB_RNIKVH:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG1</cell>
+ <cell>+</cell>
+ <cell>0.046</cell>
+ <cell>7.911</cell>
+ <cell>98</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[26]:CLK</cell>
+ <cell>net</cell>
+ <cell>COREJTAGDEBUG_C0_0_TGT_TCK_0</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>1.257</cell>
+ <cell>9.168</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>clock reconvergence pessimism</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>-1.665</cell>
+ <cell>7.503</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[26]:D</cell>
+ <cell>Library hold time</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>+</cell>
+ <cell>0.140</cell>
+ <cell>7.643</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>7.643</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Operating Conditions</cell>
+ <cell>slow_lv_lt</cell>
+</row>
+</table>
+</section>
+<section>
+<name>SET External Hold</name>
+<text>No Path</text>
+</section>
+<section>
+<name>SET Clock to Output</name>
+<text>No Path</text>
+</section>
+<section>
+<name>SET Register to Asynchronous</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Removal (ns)</cell>
+ <cell>Skew (ns)</cell>
+ <cell>Operating Conditions</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_resp_fifo/genblk1.rst_synch_reg[0]:CLK</cell>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_resp_fifo/wr_gray_ptr_synch[1]:ALn</cell>
+ <cell>0.673</cell>
+ <cell>0.698</cell>
+ <cell>3.969</cell>
+ <cell>3.271</cell>
+ <cell>-0.032</cell>
+ <cell>-0.007</cell>
+ <cell>fast_hv_lt</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_resp_fifo/genblk1.rst_synch_reg[0]:CLK</cell>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_resp_fifo/wr_gray_ptr_synch[0]:ALn</cell>
+ <cell>0.673</cell>
+ <cell>0.698</cell>
+ <cell>3.969</cell>
+ <cell>3.271</cell>
+ <cell>-0.032</cell>
+ <cell>-0.007</cell>
+ <cell>fast_hv_lt</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_resp_fifo/genblk1.rst_synch_reg[0]:CLK</cell>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_resp_fifo/rd_ptr[0]:ALn</cell>
+ <cell>0.673</cell>
+ <cell>0.698</cell>
+ <cell>3.969</cell>
+ <cell>3.271</cell>
+ <cell>-0.032</cell>
+ <cell>-0.007</cell>
+ <cell>fast_hv_lt</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_resp_fifo/genblk1.rst_synch_reg[0]:CLK</cell>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_resp_fifo/rd_gray_ptr[1]:ALn</cell>
+ <cell>0.673</cell>
+ <cell>0.698</cell>
+ <cell>3.969</cell>
+ <cell>3.271</cell>
+ <cell>-0.032</cell>
+ <cell>-0.007</cell>
+ <cell>fast_hv_lt</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_resp_fifo/genblk1.rst_synch_reg[0]:CLK</cell>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_resp_fifo/rd_gray_ptr[0]:ALn</cell>
+ <cell>0.673</cell>
+ <cell>0.698</cell>
+ <cell>3.969</cell>
+ <cell>3.271</cell>
+ <cell>-0.032</cell>
+ <cell>-0.007</cell>
+ <cell>fast_hv_lt</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_resp_fifo/genblk1.rst_synch_reg[0]:CLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_resp_fifo/wr_gray_ptr_synch[1]:ALn</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>3.969</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>3.271</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.698</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>TCK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>TCK</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk1.genblk1.genblk1.UJTAG_inst:TCK</cell>
+ <cell>net</cell>
+ <cell>TCK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk1.genblk1.genblk1.UJTAG_inst:UDRCK</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:UJTAG_SEC</cell>
+ <cell>+</cell>
+ <cell>0.507</cell>
+ <cell>0.507</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D_1:A</cell>
+ <cell>net</cell>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.166</cell>
+ <cell>0.673</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D_1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:ICB_CLKINT</cell>
+ <cell>+</cell>
+ <cell>0.141</cell>
+ <cell>0.814</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D:A</cell>
+ <cell>net</cell>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D_NET</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.090</cell>
+ <cell>0.904</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.108</cell>
+ <cell>1.012</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D/U0_RGB1:A</cell>
+ <cell>net</cell>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D/U0_Y</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.241</cell>
+ <cell>1.253</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D/U0_RGB1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.038</cell>
+ <cell>1.291</cell>
+ <cell>18</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_0:A</cell>
+ <cell>net</cell>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/iUDRCK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.290</cell>
+ <cell>1.581</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_0:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.120</cell>
+ <cell>1.701</cell>
+ <cell>2</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk3.genblk1.TGT_TCK_GLB:A</cell>
+ <cell>net</cell>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/un1_DUT_TCK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.954</cell>
+ <cell>2.655</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk3.genblk1.TGT_TCK_GLB:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.087</cell>
+ <cell>2.742</cell>
+ <cell>2</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk3.genblk1.TGT_TCK_GLB/U0_RGB1:A</cell>
+ <cell>net</cell>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk3.genblk1.TGT_TCK_GLB/U0_Y</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.252</cell>
+ <cell>2.994</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk3.genblk1.TGT_TCK_GLB/U0_RGB1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.038</cell>
+ <cell>3.032</cell>
+ <cell>106</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_resp_fifo/genblk1.rst_synch_reg[0]:CLK</cell>
+ <cell>net</cell>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/TGT_TCK_GLB</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.264</cell>
+ <cell>3.296</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_resp_fifo/genblk1.rst_synch_reg[0]:Q</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>+</cell>
+ <cell>0.072</cell>
+ <cell>3.368</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_resp_fifo/rd_reset:B</cell>
+ <cell>net</cell>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_resp_fifo/rst_synch_reg[0]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.082</cell>
+ <cell>3.450</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_resp_fifo/rd_reset:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG2</cell>
+ <cell>+</cell>
+ <cell>0.051</cell>
+ <cell>3.501</cell>
+ <cell>6</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_resp_fifo/wr_gray_ptr_synch[1]:ALn</cell>
+ <cell>net</cell>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_resp_fifo/rd_reset_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.468</cell>
+ <cell>3.969</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>3.969</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>TCK</cell>
+ <cell>Clock Constraint</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>TCK</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk1.genblk1.genblk1.UJTAG_inst:TCK</cell>
+ <cell>net</cell>
+ <cell>TCK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk1.genblk1.genblk1.UJTAG_inst:UDRCK</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:UJTAG_SEC</cell>
+ <cell>+</cell>
+ <cell>1.040</cell>
+ <cell>1.040</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D_1:A</cell>
+ <cell>net</cell>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.182</cell>
+ <cell>1.222</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D_1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:ICB_CLKINT</cell>
+ <cell>+</cell>
+ <cell>0.162</cell>
+ <cell>1.384</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D:A</cell>
+ <cell>net</cell>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D_NET</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.099</cell>
+ <cell>1.483</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.118</cell>
+ <cell>1.601</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D/U0_RGB1:A</cell>
+ <cell>net</cell>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D/U0_Y</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.266</cell>
+ <cell>1.867</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D/U0_RGB1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.042</cell>
+ <cell>1.909</cell>
+ <cell>18</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_0:A</cell>
+ <cell>net</cell>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/iUDRCK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.328</cell>
+ <cell>2.237</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_0:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.154</cell>
+ <cell>2.391</cell>
+ <cell>2</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk3.genblk1.TGT_TCK_GLB:A</cell>
+ <cell>net</cell>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/un1_DUT_TCK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>1.175</cell>
+ <cell>3.566</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk3.genblk1.TGT_TCK_GLB:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.095</cell>
+ <cell>3.661</cell>
+ <cell>2</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk3.genblk1.TGT_TCK_GLB/U0_RGB1:A</cell>
+ <cell>net</cell>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk3.genblk1.TGT_TCK_GLB/U0_Y</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.277</cell>
+ <cell>3.938</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk3.genblk1.TGT_TCK_GLB/U0_RGB1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.043</cell>
+ <cell>3.981</cell>
+ <cell>106</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_resp_fifo/wr_gray_ptr_synch[1]:CLK</cell>
+ <cell>net</cell>
+ <cell>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/TGT_TCK_GLB</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.299</cell>
+ <cell>4.280</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>clock reconvergence pessimism</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>-0.977</cell>
+ <cell>3.303</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_resp_fifo/wr_gray_ptr_synch[1]:ALn</cell>
+ <cell>Library removal time</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>+</cell>
+ <cell>-0.032</cell>
+ <cell>3.271</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>3.271</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Operating Conditions</cell>
+ <cell>fast_hv_lt</cell>
+</row>
+</table>
+</section>
+<section>
+<name>SET External Removal</name>
+<text>No Path</text>
+</section>
+<section>
+<name>SET Asynchronous to Register</name>
+<text>No Path</text>
+</section>
+<section>
+<name>SET PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0/OUT0 to TCK</name>
+<text>No Path</text>
+</section>
+</section>
+<section>
+<name>Path Set Pin to Pin</name>
+<section>
+<name>SET Input to Output</name>
+<text>No Path</text>
+</section>
+</section>
+<section>
+<name>Path Set User Sets</name>
+</section>
+</doc>

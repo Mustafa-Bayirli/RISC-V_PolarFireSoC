@@ -1,0 +1,46 @@
+
+fsm_encoding {31103912103914} sequential
+
+fsm_state_encoding {31103912103914} 01 {00}
+
+fsm_state_encoding {31103912103914} 10 {01}
+
+fsm_state_encoding {31103912103914} 11 {10}
+
+fsm_registers {31103912103914} {hipri_req_ptr[1]}  {hipri_req_ptr[0]} 
+
+fsm_encoding {31103912103914} sequential
+
+fsm_state_encoding {31103912103914} 01 {00}
+
+fsm_state_encoding {31103912103914} 10 {01}
+
+fsm_state_encoding {31103912103914} 11 {10}
+
+fsm_registers {31103912103914} {hipri_req_ptr[1]}  {hipri_req_ptr[0]} 
+
+fsm_encoding {316231662313} onehot
+
+fsm_state_encoding {316231662313} IDLE_ST {000001}
+
+fsm_state_encoding {316231662313} SETUP_ST {000010}
+
+fsm_state_encoding {316231662313} ACCESS_ST {000100}
+
+fsm_state_encoding {316231662313} BH_READ_0_ST {001000}
+
+fsm_state_encoding {316231662313} BH_READ_1_ST {010000}
+
+fsm_state_encoding {316231662313} BH_WRITE_ST {100000}
+
+fsm_registers {316231662313} {gen_apb_byte_shim家pb_st[5]}  {gen_apb_byte_shim家pb_st[4]}  {gen_apb_byte_shim家pb_st[3]}  {gen_apb_byte_shim家pb_st[2]}  {gen_apb_byte_shim家pb_st[1]}  {gen_apb_byte_shim家pb_st[0]} 
+
+fsm_encoding {315938259382} sequential
+
+fsm_state_encoding {315938259382} ADDR_ST {00}
+
+fsm_state_encoding {315938259382} DATA_ST {01}
+
+fsm_state_encoding {315938259382} WAIT_ST {10}
+
+fsm_registers {315938259382} {ahb_st[1]}  {ahb_st[0]} 

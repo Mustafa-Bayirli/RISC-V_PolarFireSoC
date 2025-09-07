@@ -1,0 +1,880 @@
+<html>
+    <head>
+        <style>
+      body { font-family:arial; font-size:10pt; text-align:left; }
+      h1, h2 {
+          padding-top: 30px;
+      }
+      h3 {
+          padding-top: 20px;
+      }
+      h4, h5, h6 {
+          padding-top: 10px;
+          font-size:12pt;
+      }
+      table {
+          font-family:arial; font-size:10pt; text-align:left;
+          border-color:#B0B0B0;
+          border-style:solid;
+          border-width:1px;
+          border-collapse:collapse;
+      }
+      table th, table td {
+          font-family:arial; font-size:10pt; text-align:left;
+          border-color:#B0B0B0;
+          border-style:solid;
+          border-width:1px;
+          padding: 4px;
+      }
+     </style>
+    </head>
+    <body>
+        <h1 align="center">Global Net Report</h1>
+        <p>Microchip Technology Inc. - Microchip Libero Software Release 2025.1 (Version 2025.1.0.14)</p>
+        <p>Date: Sat Sep  6 16:37:28 2025
+</p>
+        <h2>Global Nets Information</h2>
+        <table cellpadding="4">
+            <tr>
+                <th/>
+                <th> From </th>
+                <th> GB Location </th>
+                <th> Net Name </th>
+                <th> Fanout </th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0/U0</td>
+                <td>(1166, 0)</td>
+                <td>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0/U0_Y</td>
+                <td>2290</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk3.genblk1.TGT_TCK_GLB/U0</td>
+                <td>(1165, 0)</td>
+                <td>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk3.genblk1.TGT_TCK_GLB/U0_Y</td>
+                <td>107</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D/U0</td>
+                <td>(1153, 0)</td>
+                <td>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D/U0_Y</td>
+                <td>18</td>
+            </tr>
+        </table>
+        <p/>
+        <h2>I/O to GB Connections</h2>
+        <p>(none)</p>
+        <h2>Fabric to GB Connections</h2>
+        <table cellpadding="4">
+            <tr>
+                <th/>
+                <th> From </th>
+                <th> From Location </th>
+                <th> To </th>
+                <th> Net Name </th>
+                <th> Net Type </th>
+                <th> Fanout </th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_0:Y</td>
+                <td>(667, 9)</td>
+                <td>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk3.genblk1.TGT_TCK_GLB/U0</td>
+                <td>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/un1_DUT_TCK</td>
+                <td>ROUTED</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk1.genblk1.genblk1.UJTAG_inst:UDRCK</td>
+                <td>(648, 5)</td>
+                <td>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D/U0</td>
+                <td>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2</td>
+                <td>HARDWIRED</td>
+                <td>1</td>
+            </tr>
+        </table>
+        <p/>
+        <h2>CCC to GB Connections</h2>
+        <table cellpadding="4">
+            <tr>
+                <th/>
+                <th> From </th>
+                <th> From Location </th>
+                <th> To </th>
+                <th> Net Name </th>
+                <th> Net Type </th>
+                <th> Fanout </th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0:OUT0</td>
+                <td>(2028, 215)</td>
+                <td>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0/U0</td>
+                <td>PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0_clkint_0</td>
+                <td>HARDWIRED</td>
+                <td>1</td>
+            </tr>
+        </table>
+        <p/>
+        <h2>CCC Input Connections</h2>
+        <table cellpadding="4">
+            <tr>
+                <th/>
+                <th> Port Name </th>
+                <th> Pin Number </th>
+                <th> I/O Function </th>
+                <th> From </th>
+                <th> From Location </th>
+                <th> To </th>
+                <th> CCC Location </th>
+                <th> Net Name </th>
+                <th> Net Type </th>
+                <th> Fanout </th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>REF_CLK_0</td>
+                <td>R18</td>
+                <td>HSIO56PB0/CLKIN_N_8/CCC_NE_CLKIN_N_8/CCC_NE_PLL1_OUT0</td>
+                <td>REF_CLK_0_ibuf/U_IOPAD:Y</td>
+                <td>(2028, 169)</td>
+                <td>PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0:REF_CLK_0</td>
+                <td>(2028, 215)</td>
+                <td>REF_CLK_0_c</td>
+                <td>HARDWIRED</td>
+                <td>2</td>
+            </tr>
+        </table>
+        <p/>
+        <h2>Local Nets to RGB Connections</h2>
+        <p>(none)</p>
+        <h2>Global Nets to RGB Connections</h2>
+        <table cellpadding="4">
+            <tr>
+                <th/>
+                <th> From </th>
+                <th> From Location </th>
+                <th> Net Name </th>
+                <th> Fanout </th>
+                <th/>
+                <th> RGB Location </th>
+                <th> Local Fanout </th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0/U0</td>
+                <td>(1166, 0)</td>
+                <td>PF_CCC_C0_0/PF_CCC_C0_0/clkint_0/U0_Y</td>
+                <td>2290</td>
+                <td>1</td>
+                <td>(1597, 98)</td>
+                <td>34</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>2</td>
+                <td>(1597, 125)</td>
+                <td>54</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>3</td>
+                <td>(1603, 71)</td>
+                <td>568</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>4</td>
+                <td>(1603, 98)</td>
+                <td>1118</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>5</td>
+                <td>(1603, 125)</td>
+                <td>470</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>6</td>
+                <td>(1603, 152)</td>
+                <td>46</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk3.genblk1.TGT_TCK_GLB/U0</td>
+                <td>(1165, 0)</td>
+                <td>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk3.genblk1.TGT_TCK_GLB/U0_Y</td>
+                <td>107</td>
+                <td>1</td>
+                <td>(1599, 96)</td>
+                <td>106</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>2</td>
+                <td>(1605, 96)</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D/U0</td>
+                <td>(1153, 0)</td>
+                <td>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/N_2_inferred_clock_RNI270D/U0_Y</td>
+                <td>18</td>
+                <td/>
+                <td>(723, 15)</td>
+                <td>18</td>
+            </tr>
+        </table>
+        <p/>
+        <h2>Clock Signals Summary</h2>
+        <table cellpadding="4">
+            <tr/>
+            <tr>
+                <td>The number of clock signals through  H-Chip Global resources</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>The number of clock signals through     Row Global resources</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>The number of clock signals through  Sector Global resources</td>
+                <td>29</td>
+            </tr>
+            <tr>
+                <td>The number of clock signals through Cluster Global resources</td>
+                <td>398</td>
+            </tr>
+        </table>
+        <p/>
+        <h2>Warning: Local Clock Nets</h2>
+        <p>The following clocks are routed using regular routing resources instead of dedicated global resources. Clocks using regular routing have less predictable amounts of clock jitter versus the dedicated global resources. Microchip recommends using clock input and clock generation paths that maximize the usage of dedicated global routing resources, as well as promoting these signals below to dedicated global resources. Refer to the PolarFire and PolarFire SoC Clocking Resources User Guide for more information
+</p>
+        <table cellpadding="4">
+            <tr>
+                <th/>
+                <th> From </th>
+                <th> Driving Net </th>
+                <th> To </th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>COREJTAGDEBUG_C0_0/COREJTAGDEBUG_C0_0/genblk3.genblk1.TGT_TCK_GLB_RNIKVH:Y</td>
+                <td>COREJTAGDEBUG_C0_0_TGT_TCK_0</td>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[18]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[26]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/rd_gray_ptr_in_write[0]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[31]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[1]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[23]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[38]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[27]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[37]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[5]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[39]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[7]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[35]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[31]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[28]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[36]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[6]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/rd_gray_ptr_in_write[1]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[17]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[8]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[6]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[25]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[33]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[19]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[0]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[10]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[37]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[3]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[12]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[8]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[38]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/MIV_subsys_debug_transport_module_jtag_0/genblk3.shift_active_high.shift_active_low.shiftDR_ne_0:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[10]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[1]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[40]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[29]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[20]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[2]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[16]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[5]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/rd_gray_ptr_synch[1]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[22]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/MIV_subsys_debug_transport_module_jtag_0/ir_and_Instruction_register.gen_ir_and_Instruction_register_active_low.irReg[3]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[7]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[40]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[20]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[13]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[0]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[24]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/wr_gray_ptr[1]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[2]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[36]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[26]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/MIV_subsys_debug_transport_module_jtag_0/ir_and_Instruction_register.gen_ir_and_Instruction_register_active_low.irReg[0]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[14]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[9]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[13]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[12]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[39]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[14]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[30]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[32]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[3]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/MIV_subsys_debug_transport_module_jtag_0/genblk3.shift_active_high.shift_active_low.shiftBP_ne_0:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[15]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/wr_gray_ptr[0]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/MIV_subsys_debug_transport_module_jtag_0/genblk3.shift_active_high.shift_active_low.shiftDMI_ne_0:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[30]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[24]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/MIV_subsys_debug_transport_module_jtag_0/ir_and_Instruction_register.gen_ir_and_Instruction_register_active_low.irReg[4]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[23]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[22]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[29]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/rd_gray_ptr_synch[0]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[21]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[25]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[4]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/MIV_subsys_debug_transport_module_jtag_0/genblk3.shift_active_high.shift_active_low.shiftIR_ne_0:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[4]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[18]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[17]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[19]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[33]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[34]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[11]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[9]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[32]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/wr_ptr[0]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[15]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[21]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[16]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[34]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[28]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/MIV_subsys_debug_transport_module_jtag_0/ir_and_Instruction_register.gen_ir_and_Instruction_register_active_low.irReg[1]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[27]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram1_[35]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/debug_req_fifo/fifo_memory.gen_subsys_debug.u_subsys_debug_unit_0.debug_req_fifo.fifo_memory_ram0_[11]:CLK</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td>MIV_RV32_C0_0/MIV_RV32_C0_0/u_ipcore_0/gen_subsys_debug.u_subsys_debug_unit_0/MIV_subsys_debug_transport_module_jtag_0/ir_and_Instruction_register.gen_ir_and_Instruction_register_active_low.irReg[2]:CLK</td>
+            </tr>
+        </table>
+    </body>
+</html>

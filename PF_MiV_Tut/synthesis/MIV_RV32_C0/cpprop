@@ -1,0 +1,9 @@
+n work MIV_RV32_C0 verilog;
+av .compile_point_summary_status "Mapped";
+av .compile_point_summary_reason "No database";
+av .compile_point_update_model 0;
+av .compile_point_fast_synthesis "No";
+av .compile_point_cputime_used 106.703;
+av .compile_point_starttime_stamp "Sat Sep  6 16:25:16 2025";
+av .compile_point_endtime_stamp "Sat Sep  6 16:27:04 2025";
+av .compile_point_realtime_used 107.788;

@@ -1,0 +1,33 @@
+@P:  Worst Slack : -32.354
+@P:  COREJTAGDEBUG_Z3|N_2_inferred_clock - Estimated Frequency : 13.4 MHz
+@P:  COREJTAGDEBUG_Z3|N_2_inferred_clock - Requested Frequency : 100.0 MHz
+@P:  COREJTAGDEBUG_Z3|N_2_inferred_clock - Estimated Period : 74.708
+@P:  COREJTAGDEBUG_Z3|N_2_inferred_clock - Requested Period : 10.000
+@P:  COREJTAGDEBUG_Z3|N_2_inferred_clock - Slack : -32.354
+@P:  PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0/OUT0 - Estimated Frequency : 50.3 MHz
+@P:  PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0/OUT0 - Requested Frequency : 80.0 MHz
+@P:  PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0/OUT0 - Estimated Period : 19.861
+@P:  PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0/OUT0 - Requested Period : 12.500
+@P:  PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0/OUT0 - Slack : -7.361
+@P:  REF_CLK_0 - Estimated Frequency : NA
+@P:  REF_CLK_0 - Requested Frequency : 50.0 MHz
+@P:  REF_CLK_0 - Estimated Period : NA
+@P:  REF_CLK_0 - Requested Period : 20.000
+@P:  REF_CLK_0 - Slack : NA
+@P:  TCK - Estimated Frequency : NA
+@P:  TCK - Requested Frequency : 6.0 MHz
+@P:  TCK - Estimated Period : NA
+@P:  TCK - Requested Period : 166.670
+@P:  TCK - Slack : NA
+@P:  System - Estimated Frequency : 26.4 MHz
+@P:  System - Requested Frequency : 100.0 MHz
+@P:  System - Estimated Period : 37.901
+@P:  System - Requested Period : 10.000
+@P:  System - Slack : -27.901
+@P: PROC_SUBSYSTEM Part : mpfs095tfcvg784-1
+@P: PROC_SUBSYSTEM Register bits  : 2377 
+@P: PROC_SUBSYSTEM DSP Blocks  : 0
+@P: PROC_SUBSYSTEM I/O primitives : 8
+@P: PROC_SUBSYSTEM RAM1K20 :  32
+@P: PROC_SUBSYSTEM RAM64x12 :  7
+@P:  CPU Time : 0h:00m:07s

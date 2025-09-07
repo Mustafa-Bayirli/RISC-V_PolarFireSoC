@@ -1,0 +1,220 @@
+# Sat Sep  6 16:25:17 2025
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09M-5
+Install: C:\Microchip\Libero_SoC_2025.1\Libero_SoC\Synplify_Pro
+OS: Windows 10 or later
+Hostname: MUSTAFA
+
+Implementation : synthesis
+Synopsys Microchip Technology Mapper, Version map202309act, Build 395R, Built Apr 29 2025 06:36:49, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 189MB peak: 189MB)
+
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 192MB peak: 204MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 192MB peak: 204MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 193MB peak: 204MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 194MB peak: 204MB)
+
+
+Vector Gate Optimization Enabled: Optimizing  Partial Hanging Logic. 
+
+@N: MF104 :"c:\mustafa\courses&learning\microchip_fpga-soc_training\risc-v_for_polarfire\discovery_mi-v_tutorial\pf_miv_tut\component\microsemi\miv\miv_rv32\3.1.200\hart_merged\miv_rv32_hart_merged.v":10619:8:10619:19|Found compile point of type hard on View view:work.miv_rv32_exu_1s_1s_1s_1s_0s_0s_0s_1_0_1(verilog) 
+@N: MF104 :"c:\mustafa\courses&learning\microchip_fpga-soc_training\risc-v_for_polarfire\discovery_mi-v_tutorial\pf_miv_tut\component\microsemi\miv\miv_rv32\3.1.200\hart_merged\miv_rv32_hart_merged.v":7494:7:7494:21|Found compile point of type hard on View view:work.miv_rv32_expipe_Z7(verilog) 
+@N: MF104 :"c:\mustafa\courses&learning\microchip_fpga-soc_training\risc-v_for_polarfire\discovery_mi-v_tutorial\pf_miv_tut\component\work\miv_rv32_c0\miv_rv32_c0.v":79:7:79:17|Found compile point of type hard on View view:work.MIV_RV32_C0(verilog) 
+
+
+@N: MF105 |Performing bottom-up mapping of Top level view:work.PROC_SUBSYSTEM(verilog) 
+
+Start loading ILMs (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 270MB peak: 270MB)
+
+
+Start creating ILM for FPGA MIV_RV32_C0 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 281MB peak: 281MB)
+
+
+Finished creating ILM for FPGA MIV_RV32_C0 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 282MB peak: 282MB)
+
+
+Finished loading ILMs (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 274MB peak: 282MB)
+
+
+Begin compile point sub-process log
+
+@N: MF106 :"c:\mustafa\courses&learning\microchip_fpga-soc_training\risc-v_for_polarfire\discovery_mi-v_tutorial\pf_miv_tut\component\work\proc_subsystem\proc_subsystem.v":9:7:9:20|Mapping Top level view:work.PROC_SUBSYSTEM(verilog) because 
+		 no database from previous run found.
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 274MB peak: 282MB)
+
+@N: MO111 :"c:\mustafa\courses&learning\microchip_fpga-soc_training\risc-v_for_polarfire\discovery_mi-v_tutorial\pf_miv_tut\component\actel\directcore\corejtagdebug\4.0.100\core\corejtagdebug.v":32:8:32:11|Tristate driver UTMS (in view: COREJTAGDEBUG_LIB.COREJTAGDEBUG_Z3(verilog)) on net UTMS (in view: COREJTAGDEBUG_LIB.COREJTAGDEBUG_Z3(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\mustafa\courses&learning\microchip_fpga-soc_training\risc-v_for_polarfire\discovery_mi-v_tutorial\pf_miv_tut\component\actel\directcore\corejtagdebug\4.0.100\core\corejtagdebug.v":31:8:31:13|Tristate driver UTRSTB (in view: COREJTAGDEBUG_LIB.COREJTAGDEBUG_Z3(verilog)) on net UTRSTB (in view: COREJTAGDEBUG_LIB.COREJTAGDEBUG_Z3(verilog)) has its enable tied to GND.
+@N: BZ173 :"c:\mustafa\courses&learning\microchip_fpga-soc_training\risc-v_for_polarfire\discovery_mi-v_tutorial\pf_miv_tut\component\microsemi\miv\miv_rv32\3.1.200\hart_merged\miv_rv32_hart_merged.v":19089:4:19089:7|ROM MIV_RV32_C0_0.u_ipcore_0.u_hart_0.u_lsu_0.lsu_emi_req_write_1[1:0] (in view: work.MIV_RV32_C0(verilog)) mapped in logic.
+@N: MO106 :"c:\mustafa\courses&learning\microchip_fpga-soc_training\risc-v_for_polarfire\discovery_mi-v_tutorial\pf_miv_tut\component\microsemi\miv\miv_rv32\3.1.200\hart_merged\miv_rv32_hart_merged.v":19089:4:19089:7|Found ROM MIV_RV32_C0_0.u_ipcore_0.u_hart_0.u_lsu_0.lsu_emi_req_write_1[1:0] (in view: work.MIV_RV32_C0(verilog)) with 10 words by 2 bits.
+@N: BZ173 :"c:\mustafa\courses&learning\microchip_fpga-soc_training\risc-v_for_polarfire\discovery_mi-v_tutorial\pf_miv_tut\component\actel\directcore\coreapb3\4.2.100\rtl\vlog\core\coreapb3.v":267:2:267:5|ROM CoreAPB3_C0_0.CoreAPB3_C0_0.iPSELS_raw_2[2:0] (in view: work.PROC_SUBSYSTEM(verilog)) mapped in logic.
+@N: BZ173 :"c:\mustafa\courses&learning\microchip_fpga-soc_training\risc-v_for_polarfire\discovery_mi-v_tutorial\pf_miv_tut\component\actel\directcore\coreapb3\4.2.100\rtl\vlog\core\coreapb3.v":267:2:267:5|ROM CoreAPB3_C0_0.CoreAPB3_C0_0.iPSELS_raw_2[2:0] (in view: work.PROC_SUBSYSTEM(verilog)) mapped in logic.
+@N: MO106 :"c:\mustafa\courses&learning\microchip_fpga-soc_training\risc-v_for_polarfire\discovery_mi-v_tutorial\pf_miv_tut\component\actel\directcore\coreapb3\4.2.100\rtl\vlog\core\coreapb3.v":267:2:267:5|Found ROM CoreAPB3_C0_0.CoreAPB3_C0_0.iPSELS_raw_2[2:0] (in view: work.PROC_SUBSYSTEM(verilog)) with 3 words by 3 bits.
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 279MB peak: 282MB)
+
+@N: MO231 :"c:\mustafa\courses&learning\microchip_fpga-soc_training\risc-v_for_polarfire\discovery_mi-v_tutorial\pf_miv_tut\component\work\coreuartapb_c0\coreuartapb_c0_0\rtl\vlog\core\clock_gen.v":283:6:283:11|Found counter in view:work.CoreUARTapb_C0_CoreUARTapb_C0_0_Clock_gen_0s_0s(verilog) instance genblk1\.baud_cntr[12:0] 
+Encoding state machine xmit_state[5:0] (in view: work.CoreUARTapb_C0_CoreUARTapb_C0_0_Tx_async_0s_0s_0s_1s_2s_3s_4s_5s_6s(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 000001
+   00000000000000000000000000000001 -> 000010
+   00000000000000000000000000000010 -> 000100
+   00000000000000000000000000000011 -> 001000
+   00000000000000000000000000000100 -> 010000
+   00000000000000000000000000000101 -> 100000
+Encoding state machine rx_state[3:0] (in view: work.CoreUARTapb_C0_CoreUARTapb_C0_0_Rx_async_0s_0s_0s_1s_2s_3s(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\mustafa\courses&learning\microchip_fpga-soc_training\risc-v_for_polarfire\discovery_mi-v_tutorial\pf_miv_tut\component\work\coreuartapb_c0\coreuartapb_c0_0\rtl\vlog\core\rx_async.v":286:0:286:5|There are no possible illegal states for state machine rx_state[3:0] (in view: work.CoreUARTapb_C0_CoreUARTapb_C0_0_Rx_async_0s_0s_0s_1s_2s_3s(verilog)); safe FSM implementation is not required.
+@W: BN132 :"c:\mustafa\courses&learning\microchip_fpga-soc_training\risc-v_for_polarfire\discovery_mi-v_tutorial\pf_miv_tut\component\work\coreuartapb_c0\coreuartapb_c0_0\rtl\vlog\core\rx_async.v":261:0:261:5|Removing instance CoreUARTapb_C0_0.CoreUARTapb_C0_0.uUART.make_RX.last_bit[2] because it is equivalent to instance CoreUARTapb_C0_0.CoreUARTapb_C0_0.uUART.make_RX.last_bit[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+Encoding state machine MIV_RV32_C0_0.u_ipcore_0.gen_subsys_debug\.u_subsys_debug_unit_0.MIV_subsys_debug_transport_module_jtag_0.gen_shift_register_active_high\.gen_shift_register_active_low\.dtmcs_dmistat[3:0] (in view: work.MIV_RV32_C0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\mustafa\courses&learning\microchip_fpga-soc_training\risc-v_for_polarfire\discovery_mi-v_tutorial\pf_miv_tut\component\microsemi\miv\miv_rv32\3.1.200\subsys_merged\miv_rv32_subsys_merged.v":16135:12:16135:20|There are no possible illegal states for state machine MIV_RV32_C0_0.u_ipcore_0.gen_subsys_debug\.u_subsys_debug_unit_0.MIV_subsys_debug_transport_module_jtag_0.gen_shift_register_active_high\.gen_shift_register_active_low\.dtmcs_dmistat[3:0] (in view: work.MIV_RV32_C0(verilog)); safe FSM implementation is not required.
+Encoding state machine MIV_RV32_C0_0.u_ipcore_0.gen_subsys_debug\.u_subsys_debug_unit_0.MIV_subsys_debug_transport_module_jtag_0.gen_current_state_register_active_high\.gen_current_state_register_active_low\.currTapState[15:0] (in view: work.MIV_RV32_C0(verilog))
+original code -> new code
+   0000 -> 0000000000000001
+   0001 -> 0000000000000010
+   0010 -> 0000000000000100
+   0011 -> 0000000000001000
+   0100 -> 0000000000010000
+   0101 -> 0000000000100000
+   0110 -> 0000000001000000
+   0111 -> 0000000010000000
+   1000 -> 0000000100000000
+   1001 -> 0000001000000000
+   1010 -> 0000010000000000
+   1011 -> 0000100000000000
+   1100 -> 0001000000000000
+   1101 -> 0010000000000000
+   1110 -> 0100000000000000
+   1111 -> 1000000000000000
+Encoding state machine MIV_RV32_C0_0.u_ipcore_0.gen_ahb\.u_subsys_ahb_0.u_ahb_req_arb.hipri_req_ptr[2:0] (in view: work.MIV_RV32_C0(verilog))
+original code -> new code
+   01 -> 00
+   10 -> 01
+   11 -> 10
+Encoding state machine MIV_RV32_C0_0.u_ipcore_0.gen_ahb\.u_subsys_ahb_0.ahb_st[2:0] (in view: work.MIV_RV32_C0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine MIV_RV32_C0_0.u_ipcore_0.gen_subsys_debug\.u_subsys_debug_unit_0.miv_rv32_debug_du_0.miv_rv32_debug_sba_0.sba_state[3:0] (in view: work.MIV_RV32_C0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\mustafa\courses&learning\microchip_fpga-soc_training\risc-v_for_polarfire\discovery_mi-v_tutorial\pf_miv_tut\component\microsemi\miv\miv_rv32\3.1.200\subsys_merged\miv_rv32_subsys_merged.v":15192:0:15192:8|There are no possible illegal states for state machine MIV_RV32_C0_0.u_ipcore_0.gen_subsys_debug\.u_subsys_debug_unit_0.miv_rv32_debug_du_0.miv_rv32_debug_sba_0.sba_state[3:0] (in view: work.MIV_RV32_C0(verilog)); safe FSM implementation is not required.
+@N: MF179 :"c:\mustafa\courses&learning\microchip_fpga-soc_training\risc-v_for_polarfire\discovery_mi-v_tutorial\pf_miv_tut\component\microsemi\miv\miv_rv32\3.1.200\hart_merged\miv_rv32_hart_merged.v":11165:64:11165:92|Found 32 by 32 bit equality operator ('==') MIV_RV32_C0_0.u_ipcore_0.u_hart_0.u_expipe_0.u_exu_0.un152_exu_alu_result (in view: work.MIV_RV32_C0(verilog))
+Encoding state machine ahbcurr_state[2:0] (in view: work.PF_SRAM_AHBL_AXI_C0_COREAHBLSRAM_PF_0_CoreAHBLSRAM_AHBLSram_Z12(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+@N: MO231 :"c:\mustafa\courses&learning\microchip_fpga-soc_training\risc-v_for_polarfire\discovery_mi-v_tutorial\pf_miv_tut\component\actel\directcore\coretimer\2.0.103\rtl\vlog\core\coretimer.v":262:4:262:9|Found counter in view:CORETIMER_LIB.CoreTimer_32s_1s_19s_0s(verilog) instance Count[31:0] 
+@N: MO231 :"c:\mustafa\courses&learning\microchip_fpga-soc_training\risc-v_for_polarfire\discovery_mi-v_tutorial\pf_miv_tut\component\actel\directcore\coretimer\2.0.103\rtl\vlog\core\coretimer.v":211:4:211:9|Found counter in view:CORETIMER_LIB.CoreTimer_32s_1s_19s_0s(verilog) instance PreScale[9:0] 
+
+Starting factoring (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:09s; Memory used current: 284MB peak: 284MB)
+
+Auto Dissolve of PF_SRAM_AHBL_AXI_C0_0 (inst of view:work.PF_SRAM_AHBL_AXI_C0(verilog))
+
+Finished factoring (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 288MB peak: 288MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+NConnInternalConnection caching is on
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:13s; Memory used current: 300MB peak: 322MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:14s; Memory used current: 300MB peak: 322MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:41s; CPU Time elapsed 0h:00m:39s; Memory used current: 317MB peak: 322MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:41s; CPU Time elapsed 0h:00m:40s; Memory used current: 317MB peak: 322MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:43s; CPU Time elapsed 0h:00m:41s; Memory used current: 317MB peak: 322MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:46s; CPU Time elapsed 0h:00m:44s; Memory used current: 341MB peak: 377MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:45s		   -32.18ns		2839 /      1378
+   2		0h:00m:45s		   -32.18ns		2795 /      1378
+   3		0h:00m:46s		   -32.18ns		2795 /      1378
+   4		0h:00m:47s		   -32.18ns		2796 /      1378
+
+   5		0h:00m:51s		   -32.18ns		2818 /      1378
+   6		0h:00m:52s		   -32.18ns		2820 /      1378
+   7		0h:00m:53s		   -32.18ns		2819 /      1378
+   8		0h:00m:54s		   -32.18ns		2820 /      1378
+   9		0h:00m:54s		   -32.18ns		2821 /      1378
+
+
+  10		0h:00m:55s		   -32.18ns		2826 /      1378
+  11		0h:00m:55s		   -32.18ns		2828 /      1378
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:59s; CPU Time elapsed 0h:00m:57s; Memory used current: 347MB peak: 377MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:59s; CPU Time elapsed 0h:00m:58s; Memory used current: 347MB peak: 377MB)
+
+
+End compile point sub-process log
+
+Writing compile point status file C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\synthesis\PROC_SUBSYSTEM\cpprop
+
+Summary of Compile Points :
+*************************** 
+Name               Status     Reason     
+-----------------------------------------
+PROC_SUBSYSTEM     Mapped     No database
+=========================================
+
+Process took 0h:00m:59s realtime, 0h:00m:58s cputime
+# Sat Sep  6 16:26:17 2025
+
+###########################################################]

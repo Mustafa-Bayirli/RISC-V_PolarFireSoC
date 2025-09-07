@@ -1,0 +1,8 @@
+**** Begin Compile Point : PROC_SUBSYSTEM ****
+**** End Compile Point : PROC_SUBSYSTEM ****
+**** Begin Compile Point : miv_rv32_exu_1s_1s_1s_1s_0s_0s_0s_1_0_1 ****
+**** End Compile Point : miv_rv32_exu_1s_1s_1s_1s_0s_0s_0s_1_0_1 ****
+**** Begin Compile Point : miv_rv32_expipe_Z7 ****
+**** End Compile Point : miv_rv32_expipe_Z7 ****
+**** Begin Compile Point : MIV_RV32_C0 ****
+**** End Compile Point : MIV_RV32_C0 ****

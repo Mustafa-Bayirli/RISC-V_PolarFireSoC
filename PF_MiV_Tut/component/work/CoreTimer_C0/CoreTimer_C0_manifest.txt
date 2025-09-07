@@ -1,0 +1,26 @@
+Microchip Technology Inc. - Microchip Libero Software Release 2025.1 (Version 2025.1.0.14)
+
+Date      :  Sat Sep  6 15:30:24 2025
+Project   :  C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut
+Component :  CoreTimer_C0
+Family    :  PolarFireSoC
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Mustafa/Courses&Learning/Microchip_FPGA-SoC_Training/RISC-V_for_PolarFire/Discovery_Mi-V_tutorial/PF_MiV_Tut/component/Actel/DirectCore/CoreTimer/2.0.103/rtl/vlog/core/coretimer.v
+    C:/Mustafa/Courses&Learning/Microchip_FPGA-SoC_Training/RISC-V_for_PolarFire/Discovery_Mi-V_tutorial/PF_MiV_Tut/component/work/CoreTimer_C0/CoreTimer_C0.v
+
+Stimulus files for all Simulation tools:
+    C:/Mustafa/Courses&Learning/Microchip_FPGA-SoC_Training/RISC-V_for_PolarFire/Discovery_Mi-V_tutorial/PF_MiV_Tut/component/Actel/DirectCore/CoreTimer/2.0.103/mti/bfmtovec.exe
+    C:/Mustafa/Courses&Learning/Microchip_FPGA-SoC_Training/RISC-V_for_PolarFire/Discovery_Mi-V_tutorial/PF_MiV_Tut/component/Actel/DirectCore/CoreTimer/2.0.103/mti/bfmtovec.lin
+    C:/Mustafa/Courses&Learning/Microchip_FPGA-SoC_Training/RISC-V_for_PolarFire/Discovery_Mi-V_tutorial/PF_MiV_Tut/component/Actel/DirectCore/CoreTimer/2.0.103/mti/bfmtovec_compile.do
+    C:/Mustafa/Courses&Learning/Microchip_FPGA-SoC_Training/RISC-V_for_PolarFire/Discovery_Mi-V_tutorial/PF_MiV_Tut/component/Actel/DirectCore/CoreTimer/2.0.103/mti/wave.do
+    C:/Mustafa/Courses&Learning/Microchip_FPGA-SoC_Training/RISC-V_for_PolarFire/Discovery_Mi-V_tutorial/PF_MiV_Tut/component/Actel/DirectCore/CoreTimer/2.0.103/rtl/vlog/test/user_tb.bfm
+
+    C:/Mustafa/Courses&Learning/Microchip_FPGA-SoC_Training/RISC-V_for_PolarFire/Discovery_Mi-V_tutorial/PF_MiV_Tut/component/Actel/DirectCore/CoreTimer/2.0.103/rtl/vlog/amba_bfm/bfm_ahbtoapb.v
+    C:/Mustafa/Courses&Learning/Microchip_FPGA-SoC_Training/RISC-V_for_PolarFire/Discovery_Mi-V_tutorial/PF_MiV_Tut/component/Actel/DirectCore/CoreTimer/2.0.103/rtl/vlog/amba_bfm/bfm_apb.v
+    C:/Mustafa/Courses&Learning/Microchip_FPGA-SoC_Training/RISC-V_for_PolarFire/Discovery_Mi-V_tutorial/PF_MiV_Tut/component/Actel/DirectCore/CoreTimer/2.0.103/rtl/vlog/amba_bfm/bfm_apbtoapb.v
+    C:/Mustafa/Courses&Learning/Microchip_FPGA-SoC_Training/RISC-V_for_PolarFire/Discovery_Mi-V_tutorial/PF_MiV_Tut/component/Actel/DirectCore/CoreTimer/2.0.103/rtl/vlog/amba_bfm/bfm_main.v
+    C:/Mustafa/Courses&Learning/Microchip_FPGA-SoC_Training/RISC-V_for_PolarFire/Discovery_Mi-V_tutorial/PF_MiV_Tut/component/Actel/DirectCore/CoreTimer/2.0.103/rtl/vlog/amba_bfm/bfm_package.v
+    C:/Mustafa/Courses&Learning/Microchip_FPGA-SoC_Training/RISC-V_for_PolarFire/Discovery_Mi-V_tutorial/PF_MiV_Tut/component/Actel/DirectCore/CoreTimer/2.0.103/rtl/vlog/test/testbench.v
+

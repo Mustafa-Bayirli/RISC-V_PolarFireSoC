@@ -1,0 +1,9 @@
+n work PROC_SUBSYSTEM verilog;
+av .compile_point_summary_status "Mapped";
+av .compile_point_summary_reason "No database";
+av .compile_point_update_model 0;
+av .compile_point_fast_synthesis "No";
+av .compile_point_cputime_used 58.4219;
+av .compile_point_starttime_stamp "Sat Sep  6 16:25:17 2025";
+av .compile_point_endtime_stamp "Sat Sep  6 16:26:17 2025";
+av .compile_point_realtime_used 59.279;

@@ -1,0 +1,19 @@
+Microchip Technology Inc. - Microchip Libero Software Release 2025.1 (Version 2025.1.0.14)
+
+Date      :  Sat Sep  6 15:40:41 2025
+Project   :  C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut
+Component :  MIV_RV32_C0
+Family    :  PolarFireSoC
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Mustafa/Courses&Learning/Microchip_FPGA-SoC_Training/RISC-V_for_PolarFire/Discovery_Mi-V_tutorial/PF_MiV_Tut/component/Microsemi/MiV/MIV_RV32/3.1.200/pkg/miv_rv32_hart_cfg_pkg.v
+    C:/Mustafa/Courses&Learning/Microchip_FPGA-SoC_Training/RISC-V_for_PolarFire/Discovery_Mi-V_tutorial/PF_MiV_Tut/component/Microsemi/MiV/MIV_RV32/3.1.200/pkg/miv_rv32_pkg.v
+    C:/Mustafa/Courses&Learning/Microchip_FPGA-SoC_Training/RISC-V_for_PolarFire/Discovery_Mi-V_tutorial/PF_MiV_Tut/component/Microsemi/MiV/MIV_RV32/3.1.200/pkg/miv_rv32_subsys_pkg.v
+    C:/Mustafa/Courses&Learning/Microchip_FPGA-SoC_Training/RISC-V_for_PolarFire/Discovery_Mi-V_tutorial/PF_MiV_Tut/component/Microsemi/MiV/MIV_RV32/3.1.200/subsys_merged/miv_rv32_subsys_merged.v
+    C:/Mustafa/Courses&Learning/Microchip_FPGA-SoC_Training/RISC-V_for_PolarFire/Discovery_Mi-V_tutorial/PF_MiV_Tut/component/Microsemi/MiV/MIV_RV32/3.1.200/hart_merged/miv_rv32_hart_merged.v
+    C:/Mustafa/Courses&Learning/Microchip_FPGA-SoC_Training/RISC-V_for_PolarFire/Discovery_Mi-V_tutorial/PF_MiV_Tut/component/Microsemi/MiV/MIV_RV32/3.1.200/memory/miv_rv32_ram_singleport_lp.v
+    C:/Mustafa/Courses&Learning/Microchip_FPGA-SoC_Training/RISC-V_for_PolarFire/Discovery_Mi-V_tutorial/PF_MiV_Tut/component/Microsemi/MiV/MIV_RV32/3.1.200/memory/miv_rv32_ram_singleport_lp_ecc.v
+    C:/Mustafa/Courses&Learning/Microchip_FPGA-SoC_Training/RISC-V_for_PolarFire/Discovery_Mi-V_tutorial/PF_MiV_Tut/component/work/MIV_RV32_C0/MIV_RV32_C0_0/rtl/miv_rv32.v
+    C:/Mustafa/Courses&Learning/Microchip_FPGA-SoC_Training/RISC-V_for_PolarFire/Discovery_Mi-V_tutorial/PF_MiV_Tut/component/work/MIV_RV32_C0/MIV_RV32_C0.v
+

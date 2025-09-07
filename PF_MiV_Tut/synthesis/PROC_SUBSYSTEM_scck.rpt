@@ -1,0 +1,60 @@
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09M-5
+Install: C:\Microchip\Libero_SoC_2025.1\Libero_SoC\Synplify_Pro
+OS: Windows 10 or later
+Hostname: MUSTAFA
+
+Implementation : synthesis
+
+# Written on Sat Sep  6 16:25:11 2025
+
+##### FILES SYNTAX CHECKED ##############################################
+Constraint File(s):      "C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\designer\PROC_SUBSYSTEM\synthesis.fdc"
+
+#Run constraint checker to find more issues with constraints.
+#########################################################################
+
+
+
+No issues found in constraint syntax.
+
+
+
+Clock Summary
+*************
+
+          Start                                         Requested     Requested     Clock                          Clock                     Clock
+Level     Clock                                         Frequency     Period        Type                           Group                     Load 
+--------------------------------------------------------------------------------------------------------------------------------------------------
+0 -       REF_CLK_0                                     50.0 MHz      20.000        declared                       default_clkgroup          1    
+1 .         PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0/OUT0     80.0 MHz      12.500        generated (from REF_CLK_0)     group_49_11_1             2326 
+                                                                                                                                                  
+0 -       System                                        100.0 MHz     10.000        system                         system_clkgroup           0    
+                                                                                                                                                  
+0 -       TCK                                           6.0 MHz       166.670       declared                       group_49_11_2             0    
+                                                                                                                                                  
+0 -       COREJTAGDEBUG_Z3|N_2_inferred_clock           100.0 MHz     10.000        inferred                       Inferred_clkgroup_0_2     184  
+==================================================================================================================================================
+
+
+Clock Load Summary
+******************
+
+                                            Clock     Source                                                                                       Clock Pin                                                                                                                        Non-clock Pin     Non-clock Pin                                                                                        
+Clock                                       Load      Pin                                                                                          Seq Example                                                                                                                      Seq Example       Comb Example                                                                                         
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+REF_CLK_0                                   1         REF_CLK_0(port)                                                                              PF_CCC_C0_0.PF_CCC_C0_0.pll_inst_0.REF_CLK_0                                                                                     -                 -                                                                                                    
+PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0/OUT0     2326      PF_CCC_C0_0.PF_CCC_C0_0.pll_inst_0.OUT0(PLL)                                                 PF_SRAM_AHBL_AXI_C0_0.PF_TPSRAM_AHB_AXI_0.PF_SRAM_AHBL_AXI_C0_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM_R20C0.B_CLK                          -                 PF_CCC_C0_0.PF_CCC_C0_0.clkint_0.I(BUFG)                                                             
+                                                                                                                                                                                                                                                                                                                                                                                                           
+System                                      0         -                                                                                            -                                                                                                                                -                 -                                                                                                    
+                                                                                                                                                                                                                                                                                                                                                                                                           
+TCK                                         0         TCK(port)                                                                                    -                                                                                                                                -                 -                                                                                                    
+                                                                                                                                                                                                                                                                                                                                                                                                           
+COREJTAGDEBUG_Z3|N_2_inferred_clock         184       COREJTAGDEBUG_C0_0.COREJTAGDEBUG_C0_0.genblk1\.genblk1\.genblk1\.UJTAG_inst.UDRCK(UJTAG)     MIV_RV32_C0_0.MIV_RV32_C0_0.u_ipcore_0.gen_subsys_debug\.u_subsys_debug_unit_0.debug_resp_fifo.genblk1\.rst_synch_reg[1:0].C     -                 MIV_RV32_C0_0.MIV_RV32_C0_0.u_ipcore_0.gen_subsys_debug\.u_subsys_debug_unit_0.un1_jtag_tck.I[0](inv)
+===========================================================================================================================================================================================================================================================================================================================================================================================================

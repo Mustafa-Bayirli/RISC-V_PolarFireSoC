@@ -1,0 +1,160 @@
+
+fsm_encoding {22119011910} onehot
+
+fsm_state_encoding {22119011910} tx_idle {000001}
+
+fsm_state_encoding {22119011910} tx_load {000010}
+
+fsm_state_encoding {22119011910} start_bit {000100}
+
+fsm_state_encoding {22119011910} tx_data_bits {001000}
+
+fsm_state_encoding {22119011910} parity_bit {010000}
+
+fsm_state_encoding {22119011910} tx_stop_bit {100000}
+
+fsm_registers {22119011910} {xmit_state[5]}  {xmit_state[4]}  {xmit_state[3]}  {xmit_state[2]}  {xmit_state[1]}  {xmit_state[0]} 
+
+fsm_encoding {2128602869} sequential
+
+fsm_state_encoding {2128602869} 00 {00}
+
+fsm_state_encoding {2128602869} 01 {01}
+
+fsm_state_encoding {2128602869} 10 {10}
+
+fsm_state_encoding {2128602869} 11 {11}
+
+fsm_registers {2128602869} {rx_state[1]}  {rx_state[0]} 
+
+fsm_encoding {311601312160138} onehot
+
+fsm_state_encoding {311601312160138} TEST_LOGIC_RESET {0000000000000001}
+
+fsm_state_encoding {311601312160138} RUN_TEST_IDLE {0000000000000010}
+
+fsm_state_encoding {311601312160138} SELECT_DR {0000000000000100}
+
+fsm_state_encoding {311601312160138} CAPTURE_DR {0000000000001000}
+
+fsm_state_encoding {311601312160138} SHIFT_DR {0000000000010000}
+
+fsm_state_encoding {311601312160138} EXIT1_DR {0000000000100000}
+
+fsm_state_encoding {311601312160138} PAUSE_DR {0000000001000000}
+
+fsm_state_encoding {311601312160138} EXIT2_DR {0000000010000000}
+
+fsm_state_encoding {311601312160138} UPDATE_DR {0000000100000000}
+
+fsm_state_encoding {311601312160138} SELECT_IR {0000001000000000}
+
+fsm_state_encoding {311601312160138} CAPTURE_IR {0000010000000000}
+
+fsm_state_encoding {311601312160138} SHIFT_IR {0000100000000000}
+
+fsm_state_encoding {311601312160138} EXIT1_IR {0001000000000000}
+
+fsm_state_encoding {311601312160138} PAUSE_IR {0010000000000000}
+
+fsm_state_encoding {311601312160138} EXIT2_IR {0100000000000000}
+
+fsm_state_encoding {311601312160138} UPDATE_IR {1000000000000000}
+
+fsm_registers {311601312160138} {gen_current_state_register_active_high®gen_current_state_register_active_low®currTapState[15]}  {gen_current_state_register_active_high®gen_current_state_register_active_low®currTapState[14]}  {gen_current_state_register_active_high®gen_current_state_register_active_low®currTapState[13]}  {gen_current_state_register_active_high®gen_current_state_register_active_low®currTapState[12]}  {gen_current_state_register_active_high®gen_current_state_register_active_low®currTapState[11]}  {gen_current_state_register_active_high®gen_current_state_register_active_low®currTapState[10]}  {gen_current_state_register_active_high®gen_current_state_register_active_low®currTapState[9]}  {gen_current_state_register_active_high®gen_current_state_register_active_low®currTapState[8]}  {gen_current_state_register_active_high®gen_current_state_register_active_low®currTapState[7]}  {gen_current_state_register_active_high®gen_current_state_register_active_low®currTapState[6]}  {gen_current_state_register_active_high®gen_current_state_register_active_low®currTapState[5]}  {gen_current_state_register_active_high®gen_current_state_register_active_low®currTapState[4]}  {gen_current_state_register_active_high®gen_current_state_register_active_low®currTapState[3]}  {gen_current_state_register_active_high®gen_current_state_register_active_low®currTapState[2]}  {gen_current_state_register_active_high®gen_current_state_register_active_low®currTapState[1]}  {gen_current_state_register_active_high®gen_current_state_register_active_low®currTapState[0]} 
+
+fsm_encoding {311613512161357} sequential
+
+fsm_state_encoding {311613512161357} 00 {00}
+
+fsm_state_encoding {311613512161357} 01 {01}
+
+fsm_state_encoding {311613512161357} 10 {10}
+
+fsm_state_encoding {311613512161357} 11 {11}
+
+fsm_registers {311613512161357} {gen_shift_register_active_high®gen_shift_register_active_low®dtmcs_dmistat[1]}  {gen_shift_register_active_high®gen_shift_register_active_low®dtmcs_dmistat[0]} 
+
+fsm_encoding {31151920151926} sequential
+
+fsm_state_encoding {31151920151926} IDLE {00}
+
+fsm_state_encoding {31151920151926} START {01}
+
+fsm_state_encoding {31151920151926} BUSTFR {10}
+
+fsm_state_encoding {31151920151926} RETN {11}
+
+fsm_registers {31151920151926} {sba_state[1]}  {sba_state[0]} 
+
+fsm_encoding {31147360147365} onehot
+
+fsm_state_encoding {31147360147365} INIT_DBG {000001}
+
+fsm_state_encoding {31147360147365} RUNNING {000010}
+
+fsm_state_encoding {31147360147365} HALT_WAIT_ACK {000100}
+
+fsm_state_encoding {31147360147365} HALT_STATE {001000}
+
+fsm_state_encoding {31147360147365} COMMAND_ACCESS_STATE {010000}
+
+fsm_state_encoding {31147360147365} RESUME_WAIT_ACT {100000}
+
+fsm_registers {31147360147365} {debug_state[5]}  {debug_state[4]}  {debug_state[3]}  {debug_state[2]}  {debug_state[1]}  {debug_state[0]} 
+
+fsm_encoding {31103912103914} sequential
+
+fsm_state_encoding {31103912103914} 01 {00}
+
+fsm_state_encoding {31103912103914} 10 {01}
+
+fsm_state_encoding {31103912103914} 11 {10}
+
+fsm_registers {31103912103914} {hipri_req_ptr[1]}  {hipri_req_ptr[0]} 
+
+fsm_encoding {316231662313} onehot
+
+fsm_state_encoding {316231662313} IDLE_ST {000001}
+
+fsm_state_encoding {316231662313} SETUP_ST {000010}
+
+fsm_state_encoding {316231662313} ACCESS_ST {000100}
+
+fsm_state_encoding {316231662313} BH_READ_0_ST {001000}
+
+fsm_state_encoding {316231662313} BH_READ_1_ST {010000}
+
+fsm_state_encoding {316231662313} BH_WRITE_ST {100000}
+
+fsm_registers {316231662313} {gen_apb_byte_shim®apb_st[5]}  {gen_apb_byte_shim®apb_st[4]}  {gen_apb_byte_shim®apb_st[3]}  {gen_apb_byte_shim®apb_st[2]}  {gen_apb_byte_shim®apb_st[1]}  {gen_apb_byte_shim®apb_st[0]} 
+
+fsm_encoding {31103912103914} sequential
+
+fsm_state_encoding {31103912103914} 01 {00}
+
+fsm_state_encoding {31103912103914} 10 {01}
+
+fsm_state_encoding {31103912103914} 11 {10}
+
+fsm_registers {31103912103914} {hipri_req_ptr[1]}  {hipri_req_ptr[0]} 
+
+fsm_encoding {315938259382} sequential
+
+fsm_state_encoding {315938259382} ADDR_ST {00}
+
+fsm_state_encoding {315938259382} DATA_ST {01}
+
+fsm_state_encoding {315938259382} WAIT_ST {10}
+
+fsm_registers {315938259382} {ahb_st[1]}  {ahb_st[0]} 
+
+fsm_encoding {4225932591} sequential
+
+fsm_state_encoding {4225932591} IDLE {00}
+
+fsm_state_encoding {4225932591} AHB_WR {01}
+
+fsm_state_encoding {4225932591} AHB_RD {10}
+
+fsm_registers {4225932591} {ahbcurr_state[1]}  {ahbcurr_state[0]} 

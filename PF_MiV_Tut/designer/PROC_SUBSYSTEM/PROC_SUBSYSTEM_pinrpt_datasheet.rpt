@@ -1,0 +1,26 @@
+----------------------------------------------------------------
+-Pin Report - Date: Sat Sep  6 16:40:57 2025 Pinchecksum: NOT-AVAILABLE
+-Product: Designer
+-Release: 2025.1
+-Version: 2025.1.0.14
+-Design Name: PROC_SUBSYSTEM
+-Family: PolarFireSoC
+-Die: MPFS095T
+-Package: FCSG325
+-----------------------------------------------------------------
+
+Port        |Pin |Fixed |Function                                              |Bank     |I/O Std   |Direction    |Used I/O Reg       |User I/O Lock Down |Clamp Diode   |Resistor Pull                     |Use I/O Calibration from the lane |Schmitt Trigger |Vcm Input Range    |On Die Termination |Odt Value (Ohm) |Input Delay |Slew              |Output Drive (mA) |Impedance (ohm)  |Output Load (pF)         |Source Termination (Ohm) |Output Delay |
+------------|----|------|------------------------------------------------------|---------|----------|-------------|-------------------|-------------------|--------------|----------------------------------|----------------------------------|----------------|-------------------|-------------------|----------------|------------|------------------|------------------|-----------------|-------------------------|-------------------------|-------------|
+GPIO_OUT[0]  T18  Yes    HSIO54PB0/CLKIN_N_9/CCC_NE_CLKIN_N_9                   Bank0     LVCMOS18   Output        None                No                  ON             None                               No                                 ---              ---                 ---                 120              ---          OFF                8                  ---               5                         ---                       OFF           
+GPIO_OUT[1]  V17  Yes    HSIO77NB0                                              Bank0     LVCMOS18   Output        None                No                  ON             None                               No                                 ---              ---                 ---                 120              ---          OFF                8                  ---               5                         ---                       OFF           
+GPIO_OUT[2]  U20  Yes    HSIO48NB0                                              Bank0     LVCMOS18   Output        None                No                  ON             None                               No                                 ---              ---                 ---                 120              ---          OFF                8                  ---               5                         ---                       OFF           
+GPIO_OUT[3]  U21  Yes    HSIO48PB0/CCC_NE_CLKIN_N_11                            Bank0     LVCMOS18   Output        None                No                  ON             None                               No                                 ---              ---                 ---                 120              ---          OFF                8                  ---               5                         ---                       OFF           
+REF_CLK_0    R18  Yes    HSIO56PB0/CLKIN_N_8/CCC_NE_CLKIN_N_8/CCC_NE_PLL1_OUT0  Bank0     LVCMOS18   Input         None                No                  ON             Up                                 No                                 OFF              ---                 OFF                 120              OFF          ---                ---                ---               ---                       ---                       ---           
+RESETn       T19  Yes    HSIO54NB0                                              Bank0     LVCMOS18   Input         None                No                  ON             Up                                 No                                 OFF              ---                 OFF                 120              OFF          ---                ---                ---               ---                       ---                       ---           
+RX           W21  Yes    HSIO71NB0                                              Bank0     LVCMOS18   Input         None                No                  ON             Up                                 No                                 OFF              ---                 OFF                 120              OFF          ---                ---                ---               ---                       ---                       ---           
+TCK          A8   Fixed  TCK                                                    ---       
+TDI          A9   Fixed  TDI                                                    ---       
+TDO          A7   Fixed  TDO                                                    ---       
+TMS          B7   Fixed  TMS                                                    ---       
+TRSTB        B9   Fixed  TRSTB                                                  ---       
+TX           Y21  Yes    HSIO71PB0                                              Bank0     LVCMOS18   Output        None                No                  ON             None                               No                                 ---              ---                 ---                 120              ---          OFF                8                  ---               5                         ---                       OFF           

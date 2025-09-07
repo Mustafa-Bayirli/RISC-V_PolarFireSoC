@@ -1,0 +1,58 @@
+
+fsm_encoding {31147360147365} onehot
+
+fsm_state_encoding {31147360147365} INIT_DBG {000001}
+
+fsm_state_encoding {31147360147365} RUNNING {000010}
+
+fsm_state_encoding {31147360147365} HALT_WAIT_ACK {000100}
+
+fsm_state_encoding {31147360147365} HALT_STATE {001000}
+
+fsm_state_encoding {31147360147365} COMMAND_ACCESS_STATE {010000}
+
+fsm_state_encoding {31147360147365} RESUME_WAIT_ACT {100000}
+
+fsm_registers {31147360147365} {debug_state[5]}  {debug_state[4]}  {debug_state[3]}  {debug_state[2]}  {debug_state[1]}  {debug_state[0]} 
+
+fsm_encoding {31103912103914} sequential
+
+fsm_state_encoding {31103912103914} 01 {00}
+
+fsm_state_encoding {31103912103914} 10 {01}
+
+fsm_state_encoding {31103912103914} 11 {10}
+
+fsm_registers {31103912103914} {hipri_req_ptr[1]}  {hipri_req_ptr[0]} 
+
+fsm_encoding {315938259382} sequential
+
+fsm_state_encoding {315938259382} ADDR_ST {00}
+
+fsm_state_encoding {315938259382} DATA_ST {01}
+
+fsm_state_encoding {315938259382} WAIT_ST {10}
+
+fsm_registers {315938259382} {ahb_st[1]}  {ahb_st[0]} 
+
+fsm_encoding {31151920151926} sequential
+
+fsm_state_encoding {31151920151926} IDLE {00}
+
+fsm_state_encoding {31151920151926} START {01}
+
+fsm_state_encoding {31151920151926} BUSTFR {10}
+
+fsm_state_encoding {31151920151926} RETN {11}
+
+fsm_registers {31151920151926} {sba_state[1]}  {sba_state[0]} 
+
+fsm_encoding {31103912103914} sequential
+
+fsm_state_encoding {31103912103914} 01 {00}
+
+fsm_state_encoding {31103912103914} 10 {01}
+
+fsm_state_encoding {31103912103914} 11 {10}
+
+fsm_registers {31103912103914} {hipri_req_ptr[1]}  {hipri_req_ptr[0]} 

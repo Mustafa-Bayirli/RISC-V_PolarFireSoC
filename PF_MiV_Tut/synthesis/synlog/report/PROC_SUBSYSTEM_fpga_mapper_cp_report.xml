@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+The file contains the information about all compile points from mapper to be displayed as part of the summary report.
+*******************************************************************************************-->
+<report_table display_priority="4" name="Compile Points Summary">
+<row>
+<data>Name</data>
+<data>Status</data>
+<data>Reason</data>
+<data>Real Time</data>
+<data>CPU Time</data>
+</row>
+<row>
+<data>
+<value>PROC_SUBSYSTEM</value>
+<report_link name="Report">
+<data>C:\Mustafa\Courses&amp;Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\synthesis\PROC_SUBSYSTEM\PROC_SUBSYSTEM.srr</data>
+</report_link>
+</data>
+<data>Mapped</data>
+<data>No database</data>
+<data>0h:00m:59s</data>
+<data>0h:00m:58s</data>
+</row>
+<row>
+<data>
+<value>miv_rv32_exu_1s_1s_1s_1s_0s_0s_0s_1_0_1</value>
+<report_link name="Report">
+<data>C:\Mustafa\Courses&amp;Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\synthesis\miv_rv32_exu_1s_1s_1s_1s_0s_0s_0s_1_0_1\miv_rv32_exu_1s_1s_1s_1s_0s_0s_0s_1_0_1.srr</data>
+</report_link>
+</data>
+<data>Mapped</data>
+<data>No database</data>
+<data>0h:00m:59s</data>
+<data>0h:00m:59s</data>
+</row>
+<row>
+<data>
+<value>miv_rv32_expipe_Z7</value>
+<report_link name="Report">
+<data>C:\Mustafa\Courses&amp;Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\synthesis\miv_rv32_expipe_Z7\miv_rv32_expipe_Z7.srr</data>
+</report_link>
+</data>
+<data>Mapped</data>
+<data>No database</data>
+<data>0h:01m:43s</data>
+<data>0h:01m:42s</data>
+</row>
+<row>
+<data>
+<value>MIV_RV32_C0</value>
+<report_link name="Report">
+<data>C:\Mustafa\Courses&amp;Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\synthesis\MIV_RV32_C0\MIV_RV32_C0.srr</data>
+</report_link>
+</data>
+<data>Mapped</data>
+<data>No database</data>
+<data>0h:01m:47s</data>
+<data>0h:01m:46s</data>
+</row>
+</report_table>

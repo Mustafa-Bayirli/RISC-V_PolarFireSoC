@@ -1,0 +1,48 @@
+Resource Usage Report for PROC_SUBSYSTEM 
+
+Mapping to part: mpfs095tfcvg784-1
+Cell usage:
+BANKEN          1 use
+BUFD            102 uses
+CLKINT          3 uses
+INIT            1 use
+OR2             32 uses
+OR4             320 uses
+PLL             1 use
+UJTAG           1 use
+CFG1           52 uses
+CFG2           932 uses
+CFG3           1957 uses
+CFG4           3718 uses
+
+Carry cells:
+ARI1            677 uses - used for arithmetic functions
+ARI1            135 uses - used for Wide-Mux implementation
+Total ARI1      812 uses
+
+
+Sequential Cells: 
+SLE            2377 uses
+
+DSP Blocks:    0 of 292 (0%)
+
+I/O ports: 13
+I/O primitives: 8
+INBUF          3 uses
+OUTBUF         5 uses
+
+
+Global Clock Buffers: 3
+
+Total LUTs:    7471
+
+Extra resources required for RAM and MACC_PA interface logic during P&R:
+
+RAM64X12 Interface Logic : SLEs = 84; LUTs = 84;
+RAM1K20  Interface Logic : SLEs = 1152; LUTs = 1152;
+MACC_PA     Interface Logic : SLEs = 0; LUTs = 0;
+MACC_PA_BC_ROM     Interface Logic : SLEs = 0; LUTs = 0;
+
+Total number of SLEs after P&R:  2377 + 84 + 1152 + 0 = 3613;
+Total number of LUTs after P&R:  7471 + 84 + 1152 + 0 = 8707;
+

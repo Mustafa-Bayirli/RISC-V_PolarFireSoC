@@ -1,0 +1,16 @@
+Project Name: PF_MiV_Tut
+Location: C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut
+Description: 
+Preferred HDL Type: Verilog
+
+#-----------------------------------------------------
+                  Device Details
+#-----------------------------------------------------
+
+Part Number    : MPFS095T-1FCSG325E
+Family         : PolarFireSoC
+Die            : MPFS095T
+Package        : FCSG325
+Speed          : -1
+Core Voltage   : 1.0
+Range          : EXT

@@ -1,0 +1,412 @@
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\synthesis\\synwork\\PROC_SUBSYSTEM_comp.srs|-top|PROC_SUBSYSTEM|-prodtype|synplify_pro|-infer_seqShift|-primux|-dspmac|-pqdpadd|-fixsmult|-sdff_counter|-divnmod|-nram|-actel|-I|C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\synthesis\\|-I|C:\\Microchip\\Libero_SoC_2025.1\\Libero_SoC\\Synplify_Pro\\lib|-sysv|-devicelib|C:\\Microchip\\Libero_SoC_2025.1\\Libero_SoC\\Synplify_Pro\\lib\\generic\\acg5.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|COREJTAGDEBUG_LIB|-lib|COREJTAGDEBUG_LIB|-lib|COREJTAGDEBUG_LIB|-lib|COREJTAGDEBUG_LIB|-lib|work|-lib|work|-lib|work|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|work|-lib|work|-lib|work|-lib|CORETIMER_LIB|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Microchip\\Libero_SoC_2025.1\\Libero_SoC\\Synplify_Pro\\bin64\\c_ver.exe":1745943498
+#CUR:"C:\\Microchip\\Libero_SoC_2025.1\\Libero_SoC\\Synplify_Pro\\lib\\generic\\acg5.v":1745932376
+#CUR:"C:\\Microchip\\Libero_SoC_2025.1\\Libero_SoC\\Synplify_Pro\\lib\\vlog\\hypermods.v":1745942006
+#CUR:"C:\\Microchip\\Libero_SoC_2025.1\\Libero_SoC\\Synplify_Pro\\lib\\vlog\\scemi_objects.v":1745942006
+#CUR:"C:\\Microchip\\Libero_SoC_2025.1\\Libero_SoC\\Synplify_Pro\\lib\\vlog\\scemi_pipes.svh":1745942006
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\syn_comps.v":1757190275
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\Actel\\DirectCore\\COREJTAGDEBUG\\4.0.100\\core\\corejtagdebug_bufd.v":1757187321
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\Actel\\DirectCore\\COREJTAGDEBUG\\4.0.100\\core\\corejtagdebug_uj_jtag.v":1757187321
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\Actel\\DirectCore\\COREJTAGDEBUG\\4.0.100\\core\\corejtagdebug_ujtag_wrapper.v":1757187321
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\Actel\\DirectCore\\COREJTAGDEBUG\\4.0.100\\core\\corejtagdebug.v":1757187321
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\work\\COREJTAGDEBUG_C0\\COREJTAGDEBUG_C0.v":1757187321
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\work\\CORERESET_PF_C0\\CORERESET_PF_C0_0\\core\\corereset_pf.v":1757186968
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\work\\CORERESET_PF_C0\\CORERESET_PF_C0.v":1757186968
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\Actel\\DirectCore\\CoreAPB3\\4.2.100\\rtl\\vlog\\core\\coreapb3_muxptob3.v":1757185674
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\Actel\\DirectCore\\CoreAPB3\\4.2.100\\rtl\\vlog\\core\\coreapb3_iaddr_reg.v":1757185674
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\Actel\\DirectCore\\CoreAPB3\\4.2.100\\rtl\\vlog\\core\\coreapb3.v":1757185674
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\work\\CoreAPB3_C0\\CoreAPB3_C0.v":1757185674
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\work\\CoreGPIO_C0\\CoreGPIO_C0_0\\rtl\\vlog\\core\\coregpio.v":1757186915
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\work\\CoreGPIO_C0\\CoreGPIO_C0.v":1757186915
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\Actel\\DirectCore\\CoreTimer\\2.0.103\\rtl\\vlog\\core\\coretimer.v":1757187024
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\work\\CoreTimer_C0\\CoreTimer_C0.v":1757187024
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\work\\CoreUARTapb_C0\\CoreUARTapb_C0_0\\rtl\\vlog\\core\\Clock_gen.v":1757187096
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\work\\CoreUARTapb_C0\\CoreUARTapb_C0_0\\rtl\\vlog\\core\\Rx_async.v":1757187096
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\work\\CoreUARTapb_C0\\CoreUARTapb_C0_0\\rtl\\vlog\\core\\Tx_async.v":1757187096
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\work\\CoreUARTapb_C0\\CoreUARTapb_C0_0\\rtl\\vlog\\core\\fifo_256x8_g5.v":1757187096
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\work\\CoreUARTapb_C0\\CoreUARTapb_C0_0\\rtl\\vlog\\core\\CoreUART.v":1757187096
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\work\\CoreUARTapb_C0\\CoreUARTapb_C0_0\\rtl\\vlog\\core\\CoreUARTapb.v":1757187096
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\work\\CoreUARTapb_C0\\CoreUARTapb_C0.v":1757187096
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\Microsemi\\MiV\\MIV_RV32\\3.1.200\\pkg\\miv_rv32_hart_cfg_pkg.v":1757187640
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\Microsemi\\MiV\\MIV_RV32\\3.1.200\\pkg\\miv_rv32_pkg.v":1757187640
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\Microsemi\\MiV\\MIV_RV32\\3.1.200\\hart_merged\\miv_rv32_hart_merged.v":1757187640
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\Microsemi\\MiV\\MIV_RV32\\3.1.200\\pkg\\miv_rv32_subsys_pkg.v":1757187640
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\Microsemi\\MiV\\MIV_RV32\\3.1.200\\subsys_merged\\miv_rv32_subsys_merged.v":1757187640
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\Microsemi\\MiV\\MIV_RV32\\3.1.200\\memory\\miv_rv32_ram_singleport_lp_ecc.v":1757187640
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\Microsemi\\MiV\\MIV_RV32\\3.1.200\\memory\\miv_rv32_ram_singleport_lp.v":1757187640
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\work\\MIV_RV32_C0\\MIV_RV32_C0_0\\rtl\\miv_rv32.v":1757187640
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\work\\MIV_RV32_C0\\MIV_RV32_C0.v":1757187640
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\work\\PFSOC_INIT_MONITOR_C0\\PFSOC_INIT_MONITOR_C0_0\\PFSOC_INIT_MONITOR_C0_PFSOC_INIT_MONITOR_C0_0_PFSOC_INIT_MONITOR.v":1757187237
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\work\\PFSOC_INIT_MONITOR_C0\\PFSOC_INIT_MONITOR_C0.v":1757187237
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\work\\PF_CCC_C0\\PF_CCC_C0_0\\PF_CCC_C0_PF_CCC_C0_0_PF_CCC.v":1757186089
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\work\\PF_CCC_C0\\PF_CCC_C0.v":1757186089
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\work\\PF_SRAM_AHBL_AXI_C0\\PF_TPSRAM_AHB_AXI_0\\PF_SRAM_AHBL_AXI_C0_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM.v":1757186634
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\work\\PF_SRAM_AHBL_AXI_C0\\COREAHBLSRAM_PF_0\\rtl\\vlog\\core\\CoreAHBLSRAM_AHBLSram_ECC.v":1757186632
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\work\\PF_SRAM_AHBL_AXI_C0\\COREAHBLSRAM_PF_0\\rtl\\vlog\\core\\CoreAHBLSRAM_AHBLSram.v":1757186632
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\work\\PF_SRAM_AHBL_AXI_C0\\COREAHBLSRAM_PF_0\\rtl\\vlog\\core\\CoreAHBLSRAM_PF.v":1757186632
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\work\\PF_SRAM_AHBL_AXI_C0\\PF_SRAM_AHBL_AXI_C0.v":1757186634
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\work\\PROC_SUBSYSTEM\\PROC_SUBSYSTEM.v":1757188057
+#CUR:"C:\\Mustafa\\Courses&Learning\\Microchip_FPGA-SoC_Training\\RISC-V_for_PolarFire\\Discovery_Mi-V_tutorial\\PF_MiV_Tut\\component\\MSS_syn_comps.v":1757190275
+#CUR:"miv_rv32_ifu_iab_32s_2s_3s_2s_0s_buff_entry_addr_req_10920_initial_block":1757190282
+#CUR:"miv_rv32_ifu_iab_32s_2s_3s_2s_0s_buff_entry_addr_req_10920_initial_block":1757190282
+#CUR:"miv_rv32_ifu_iab_32s_2s_3s_2s_0s_buff_entry_addr_req_10920_initial_block":1757190282
+#CUR:"miv_rv32_buffer_6s_2s_1s_1s_buff_data_10920_initial_block":1757190286
+#CUR:"miv_rv32_buffer_6s_2s_1s_1s_buff_data_10920_initial_block":1757190286
+#CUR:"miv_rv32_buffer_11s_2s_1s_1s_buff_data_10920_initial_block":1757190287
+#CUR:"miv_rv32_buffer_11s_2s_1s_1s_buff_data_10920_initial_block":1757190287
+#CUR:"miv_rv32_buffer_7s_2s_1s_1s_buff_data_10920_initial_block":1757190287
+#CUR:"miv_rv32_buffer_7s_2s_1s_1s_buff_data_10920_initial_block":1757190287
+0			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\syn_comps.v" verilog
+1			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\Actel\DirectCore\COREJTAGDEBUG\4.0.100\core\corejtagdebug_bufd.v" verilog
+2			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\Actel\DirectCore\COREJTAGDEBUG\4.0.100\core\corejtagdebug_uj_jtag.v" verilog
+3			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\Actel\DirectCore\COREJTAGDEBUG\4.0.100\core\corejtagdebug_ujtag_wrapper.v" verilog
+4			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\Actel\DirectCore\COREJTAGDEBUG\4.0.100\core\corejtagdebug.v" verilog
+5			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\work\COREJTAGDEBUG_C0\COREJTAGDEBUG_C0.v" verilog
+6			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\work\CORERESET_PF_C0\CORERESET_PF_C0_0\core\corereset_pf.v" verilog
+7			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\work\CORERESET_PF_C0\CORERESET_PF_C0.v" verilog
+8			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\Actel\DirectCore\CoreAPB3\4.2.100\rtl\vlog\core\coreapb3_muxptob3.v" verilog
+9			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\Actel\DirectCore\CoreAPB3\4.2.100\rtl\vlog\core\coreapb3_iaddr_reg.v" verilog
+10			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\Actel\DirectCore\CoreAPB3\4.2.100\rtl\vlog\core\coreapb3.v" verilog
+11			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\work\CoreAPB3_C0\CoreAPB3_C0.v" verilog
+12			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\work\CoreGPIO_C0\CoreGPIO_C0_0\rtl\vlog\core\coregpio.v" verilog
+13			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\work\CoreGPIO_C0\CoreGPIO_C0.v" verilog
+14			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\Actel\DirectCore\CoreTimer\2.0.103\rtl\vlog\core\coretimer.v" verilog
+15			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\work\CoreTimer_C0\CoreTimer_C0.v" verilog
+16			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\work\CoreUARTapb_C0\CoreUARTapb_C0_0\rtl\vlog\core\Clock_gen.v" verilog
+17			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\work\CoreUARTapb_C0\CoreUARTapb_C0_0\rtl\vlog\core\Rx_async.v" verilog
+18			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\work\CoreUARTapb_C0\CoreUARTapb_C0_0\rtl\vlog\core\Tx_async.v" verilog
+19			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\work\CoreUARTapb_C0\CoreUARTapb_C0_0\rtl\vlog\core\fifo_256x8_g5.v" verilog
+20			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\work\CoreUARTapb_C0\CoreUARTapb_C0_0\rtl\vlog\core\CoreUART.v" verilog
+21			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\work\CoreUARTapb_C0\CoreUARTapb_C0_0\rtl\vlog\core\CoreUARTapb.v" verilog
+22			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\work\CoreUARTapb_C0\CoreUARTapb_C0.v" verilog
+23			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\Microsemi\MiV\MIV_RV32\3.1.200\pkg\miv_rv32_hart_cfg_pkg.v" verilog
+24			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\Microsemi\MiV\MIV_RV32\3.1.200\pkg\miv_rv32_pkg.v" verilog
+25			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\Microsemi\MiV\MIV_RV32\3.1.200\hart_merged\miv_rv32_hart_merged.v" verilog
+26			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\Microsemi\MiV\MIV_RV32\3.1.200\pkg\miv_rv32_subsys_pkg.v" verilog
+27			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\Microsemi\MiV\MIV_RV32\3.1.200\subsys_merged\miv_rv32_subsys_merged.v" verilog
+28			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\Microsemi\MiV\MIV_RV32\3.1.200\memory\miv_rv32_ram_singleport_lp_ecc.v" verilog
+29			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\Microsemi\MiV\MIV_RV32\3.1.200\memory\miv_rv32_ram_singleport_lp.v" verilog
+30			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\work\MIV_RV32_C0\MIV_RV32_C0_0\rtl\miv_rv32.v" verilog
+31			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\work\MIV_RV32_C0\MIV_RV32_C0.v" verilog
+32			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\work\PFSOC_INIT_MONITOR_C0\PFSOC_INIT_MONITOR_C0_0\PFSOC_INIT_MONITOR_C0_PFSOC_INIT_MONITOR_C0_0_PFSOC_INIT_MONITOR.v" verilog
+33			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\work\PFSOC_INIT_MONITOR_C0\PFSOC_INIT_MONITOR_C0.v" verilog
+34			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\work\PF_CCC_C0\PF_CCC_C0_0\PF_CCC_C0_PF_CCC_C0_0_PF_CCC.v" verilog
+35			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\work\PF_CCC_C0\PF_CCC_C0.v" verilog
+36			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\work\PF_SRAM_AHBL_AXI_C0\PF_TPSRAM_AHB_AXI_0\PF_SRAM_AHBL_AXI_C0_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM.v" verilog
+37			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\work\PF_SRAM_AHBL_AXI_C0\COREAHBLSRAM_PF_0\rtl\vlog\core\CoreAHBLSRAM_AHBLSram_ECC.v" verilog
+38			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\work\PF_SRAM_AHBL_AXI_C0\COREAHBLSRAM_PF_0\rtl\vlog\core\CoreAHBLSRAM_AHBLSram.v" verilog
+39			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\work\PF_SRAM_AHBL_AXI_C0\COREAHBLSRAM_PF_0\rtl\vlog\core\CoreAHBLSRAM_PF.v" verilog
+40			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\work\PF_SRAM_AHBL_AXI_C0\PF_SRAM_AHBL_AXI_C0.v" verilog
+41			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\work\PROC_SUBSYSTEM\PROC_SUBSYSTEM.v" verilog
+42			"C:\Mustafa\Courses&Learning\Microchip_FPGA-SoC_Training\RISC-V_for_PolarFire\Discovery_Mi-V_tutorial\PF_MiV_Tut\component\MSS_syn_comps.v" verilog
+#Dependency Lists(Uses List)
+0 -1
+1 -1
+2 1
+3 -1
+4 3 2 1
+5 4
+6 -1
+7 6
+8 -1
+9 -1
+10 9 8
+11 10
+12 -1
+13 12
+14 -1
+15 14
+16 -1
+17 -1
+18 -1
+19 -1
+20 19 17 18 16
+21 20
+22 21
+23 -1
+24 -1
+25 23 24
+26 -1
+27 29 28 25 26
+28 -1
+29 -1
+30 27
+31 30
+32 0
+33 32
+34 0
+35 34
+36 -1
+37 -1
+38 -1
+39 37 38
+40 36 39
+41 33 40 35 31 22 15 7 5 13 11
+42 -1
+#Dependency Lists(Users Of)
+0 34 32
+1 4 2
+2 4
+3 4
+4 5
+5 41
+6 7
+7 41
+8 10
+9 10
+10 11
+11 41
+12 13
+13 41
+14 15
+15 41
+16 20
+17 20
+18 20
+19 20
+20 21
+21 22
+22 41
+23 25
+24 25
+25 27
+26 27
+27 30
+28 27
+29 27
+30 31
+31 41
+32 33
+33 41
+34 35
+35 41
+36 40
+37 39
+38 39
+39 40
+40 41
+41 -1
+42 -1
+#Design Unit to File Association
+module CORETIMER_LIB CoreTimer 14
+module COREAPB3_LIB CoreAPB3 10
+module COREAPB3_LIB coreapb3_iaddr_reg 9
+module COREAPB3_LIB COREAPB3_MUXPTOB3 8
+module COREJTAGDEBUG_LIB COREJTAGDEBUG 4
+module COREJTAGDEBUG_LIB UJTAG_WRAPPER 3
+module COREJTAGDEBUG_LIB COREJTAGDEBUG_UJ_JTAG 2
+module COREJTAGDEBUG_LIB corejtagdebug_bufd 1
+module work MSS 42
+module work PROC_SUBSYSTEM 41
+module work PF_SRAM_AHBL_AXI_C0 40
+module work PF_SRAM_AHBL_AXI_C0_COREAHBLSRAM_PF_0_COREAHBLSRAM_PF 39
+module work PF_SRAM_AHBL_AXI_C0_COREAHBLSRAM_PF_0_CoreAHBLSRAM_AHBLSram 38
+module work PF_SRAM_AHBL_AXI_C0_COREAHBLSRAM_PF_0_CoreAHBLSRAM_AHBLSram_ECC 37
+module work PF_SRAM_AHBL_AXI_C0_PF_TPSRAM_AHB_AXI_0_PF_TPSRAM 36
+module work PF_CCC_C0 35
+module work PF_CCC_C0_PF_CCC_C0_0_PF_CCC 34
+module work PFSOC_INIT_MONITOR_C0 33
+module work PFSOC_INIT_MONITOR_C0_PFSOC_INIT_MONITOR_C0_0_PFSOC_INIT_MONITOR 32
+module work MIV_RV32_C0 31
+module work MIV_RV32_C0_MIV_RV32_C0_0_MIV_RV32 30
+module work miv_rv32_debug_sba 27
+module work miv_rv32_debug_du 27
+module work miv_rv32_debug_fifo 27
+module work miv_rv32_debug_dtm_jtag 27
+module work miv_rv32_icache_array 27
+module work miv_rv32_icache_ram_mux 27
+module work miv_rv32_icache_ram_init 27
+module work miv_rv32_bootrom 27
+module work miv_rv32_ram_singleport_lp 29
+module work miv_rv32_ram_singleport_lp_ecc 28
+module work miv_rv32_ram_singleport_addreg 27
+module work miv_rv32_fixed_arb 27
+module work miv_rv32_axi_xaddr_buffer_slot 27
+module work miv_rv32_axi_xaddr_buffer 27
+module work miv_rv32_axi_ingress_buffer 27
+module work miv_rv32_axi_egress_slip_buffer 27
+module work miv_rv32_axi_egress_buffer 27
+module work miv_rv32_axi_wchan 27
+module work miv_rv32_axi_rchan 27
+module work miv_rv32_strb_to_addr 27
+module work miv_rv32_rr_pri_arb 27
+module work miv_rv32_subsys_regs 27
+module work miv_rv32_buffer 27
+module work miv_rv32_subsys_icache 27
+module work miv_rv32_subsys_mtime_irq 27
+module work miv_rv32_subsys_udma 27
+module work miv_rv32_subsys_ahb_initiator 27
+module work miv_rv32_subsys_axi_initiator 27
+module work miv_rv32_subsys_tcm 27
+module work miv_rv32_subsys_tcm_tas_apb_target 27
+module work miv_rv32_subsys_apb_initiator 27
+module work miv_rv32_subsys_interconnect 27
+module work miv_rv32_subsys_debug 27
+module work miv_rv32_ipcore 27
+module work miv_rv32_pa_fpu_src_type 25
+module work miv_rv32_pa_fdsu_srt_single 25
+module work miv_rv32_pa_fdsu_special 25
+module work miv_rv32_pa_fdsu_round_single 25
+module work miv_rv32_pa_fdsu_prepare 25
+module work miv_rv32_pa_fdsu_pack_single 25
+module work miv_rv32_pa_fdsu_ff1 25
+module work miv_rv32_pa_fdsu_ctrl 25
+module work miv_rv32_gated_clk_cell 25
+module work miv_rv32_pa_fpu_frbus 25
+module work miv_rv32_pa_fpu_dp 25
+module work miv_rv32_pa_fdsu_top 25
+module work miv_rv32_popcount 25
+module work miv_rv32_fpnew_divsqrt_th_32 25
+module work miv_rv32_fpnew_opgroup_multifmt_slice 25
+module work miv_rv32_fpnew_opgroup_fmt_slice 25
+module work miv_rv32_fpnew_noncomp 25
+module work miv_rv32_fpnew_fma_multi 25
+module work miv_rv32_fpnew_fma 25
+module work miv_rv32_fpnew_divsqrt_multi 25
+module work miv_rv32_fpnew_cast_multi 25
+module work miv_rv32_fpnew_rounding 25
+module work miv_rv32_lzc 25
+module work miv_rv32_fpnew_classifier 25
+module work miv_rv32_fpnew_sdotp_multi 25
+module work miv_rv32_fpnew_sdotp_multi_wrapper 25
+module work miv_rv32_norm_div_sqrt_mvp 25
+module work miv_rv32_nrbd_nrsc_mvp 25
+module work miv_rv32_preprocess_mvp 25
+module work miv_rv32_div_sqrt_top_mvp 25
+module work miv_rv32_iteration_div_sqrt_mvp 25
+module work miv_rv32_control_mvp 25
+module work miv_rv32_rr_arb_tree 25
+module work miv_rv32_fpnew_opgroup_block 25
+module work miv_rv32_gpr_ecc_enc_dec_bistw_behav 25
+module work miv_rv32_gpr_ecc_bist_template 25
+module work miv_rv32_dpr_hqa_dual_storage_rbcw 25
+module work miv_rv32_dpr_hqa_dual_storage_bistw_behav 25
+module work miv_rv32_ram_dport_reg 25
+module work miv_rv32_bist_template_dual_behav 25
+module work miv_rv32_bist_pipeline 25
+module work miv_rv32_bist_ecc_read 25
+module work miv_rv32_bist_ecc_write 25
+module work miv_rv32_bist_ecc_core 25
+module work miv_rv32_bist_ecc_empty 25
+module work miv_rv32_bist_decode 25
+module work miv_rv32_logic_mux_behav_v2 25
+module work miv_rv32_bistdual_ram_stabilizer 25
+module work miv_rv32_bistdual_ram_init 25
+module work miv_rv32_bistdual_pl_enable 25
+module work miv_rv32_bistdual_err_mask 25
+module work miv_rv32_bist_ecc 25
+module work miv_rv32_bist_err_inject 25
+module work miv_rv32_bistdual_eccw 25
+module work miv_rv32_bistdual_behav 25
+module work miv_rv32_bistmux 25
+module work miv_rv32_bistdualdata_behav 25
+module work miv_rv32_ifu_iab 25
+module work miv_rv32_fpnew_top 25
+module work miv_rv32_mul 25
+module work miv_rv32_exu 25
+module work miv_rv32_idecode 25
+module work miv_rv32_irq_reg 25
+module work miv_rv32_gpr_ram_array 25
+module work miv_rv32_gpr_ecc_enc_dec 25
+module work miv_rv32_gpr_ram_mux 25
+module work miv_rv32_gpr_ram_init 25
+module work miv_rv32_gpr_ram 25
+module work miv_rv32_gpr 25
+module work miv_rv32_csr_gpr_state_reg 25
+module work miv_rv32_priv_irq 25
+module work miv_rv32_csr_privarch 25
+module work miv_rv32_csr_decode 25
+module work miv_rv32_expipe 25
+module work miv_rv32_lsu 25
+module work miv_rv32_fetch_unit 25
+module work miv_rv32_hart 25
+module work miv_rv32_bcu 25
+module work miv_rv32_common_buffer_behav 25
+module work CoreUARTapb_C0 22
+module work CoreUARTapb_C0_CoreUARTapb_C0_0_CoreUARTapb 21
+module work CoreUARTapb_C0_CoreUARTapb_C0_0_COREUART 20
+module work CoreUARTapb_C0_CoreUARTapb_C0_0_ram256x8_g5 19
+module work CoreUARTapb_C0_CoreUARTapb_C0_0_fifo_ctrl_256 19
+module work CoreUARTapb_C0_CoreUARTapb_C0_0_fifo_256x8 19
+module work CoreUARTapb_C0_CoreUARTapb_C0_0_Tx_async 18
+module work CoreUARTapb_C0_CoreUARTapb_C0_0_Rx_async 17
+module work CoreUARTapb_C0_CoreUARTapb_C0_0_Clock_gen 16
+module work CoreTimer_C0 15
+module work CoreGPIO_C0 13
+module work CoreGPIO_C0_CoreGPIO_C0_0_CoreGPIO 12
+module work CoreAPB3_C0 11
+module work CORERESET_PF_C0 7
+module work CORERESET_PF_C0_CORERESET_PF_C0_0_CORERESET_PF 6
+module work COREJTAGDEBUG_C0 5
+module work CLKBUF_DIFF_ODT 0
+module work CLKBUF_DIFF 0
+module work MCHP_BLIC 0
+module work PFSOC_SCSM 0
+module work CORELNKTMR_V 0
+module work XCVR 0
+module work XCVR_VV 0
+module work XCVR_TEST 0
+module work XCVR_REF_CLK 0
+module work XCVR_REF_CLK_P 0
+module work XCVR_REF_CLK_N 0
+module work XCVR_PMA 0
+module work XCVR_PIPE 0
+module work XCVR_PIPE_AXI1 0
+module work XCVR_PIPE_AXI0 0
+module work XCVR_DUAL_PCS 0
+module work XCVR_APB_LINK_V2 0
+module work XCVR_APB_LINK_V 0
+module work XCVR_APB_LINK 0
+module work XCVR_8B10B 0
+module work XCVR_64B6XB 0
+module work VREFCTRL 0
+module work VREFBANKDYN 0
+module work VOLTAGEDETECT 0
+module work USPI 0
+module work UPROM 0
+module work TX_PLL 0
+module work TVS 0
+module work TAMPER 0
+module work SYS_SERVICES 0
+module work SYSRESET 0
+module work SYSCTRL_RESET_STATUS 0
+module work SCB 0
+module work QUADRST 0
+module work QUADRST_PCIE 0
+module work PLL 0
+module work PF_SPI 0
+module work PCIE 0
+module work PCIE_COMMON 0
+module work OSC_RC2MHZ 0
+module work OSC_RC200MHZ 0
+module work OSC_RC160MHZ 0
+module work LANERST 0
+module work LANECTRL 0
+module work IOD 0
+module work INIT 0
+module work ICB_NGMUX 0
+module work ICB_MUXING 0
+module work ICB_INT 0
+module work ICB_CLKSTOP 0
+module work ICB_CLKSTOP_EN 0
+module work ICB_CLKINT 0
+module work ICB_CLKDIV 0
+module work ICB_CLKDIVDELAY 0
+module work ICB_BANKCLK 0
+module work HS_IO_CLK 0
+module work GPSS_COMMON 0
+module work GLITCHDETECT 0
+module work ENFORCE 0
+module work DRI 0
+module work DLL 0
+module work DEBUG 0
+module work CRYPTO_SOC 0
+module work CRYPTO 0
+module work CRN_INT 0
+module work CRN_COMMON 0
+module work BANKEN 0
+module work BANKCTRL_HSIO 0
+module work BANKCTRL_GPIO 0
+module work BANKCTRLM 0
+module work APBS 0
+module work APBM 0
