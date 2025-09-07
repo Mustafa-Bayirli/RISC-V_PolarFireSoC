@@ -1,4 +1,4 @@
-# RISC-V on PolarFire® SoC – Training Project
+# RISC-V on PolarFire® SoC – Project
 
 This repository contains my lab work and project implementation from the **Microchip RISC-V for PolarFire® FPGA training (Libero® SoC v2025.1, Discovery Kit)**.  
 The training covered both the theoretical and practical aspects of RISC-V soft processors and their integration into FPGA designs.
